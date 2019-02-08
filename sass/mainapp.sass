@@ -1,0 +1,55 @@
+$primary: #00edb5
+$secondary: #fe8e78
+$white: #ffffff
+$light-dark: #545454
+$black: #303030
+$gray: #7f7f7f
+$button-font: Roboto, san-seriff
+$break-small: 390px
+$break-medium: 768px
+$break-large: 1200px
+.main-app .main-app__navbar
+    background: transparent!important
+.main-app .carousel-inner
+    max-height: 100vh!important
+.main-app  .main-app__navbar
+    position: absolute
+    z-index: 999
+    width: 100%
+.main-app .col-md-12
+    padding: 0!important
+.main-app .menu-driver.active
+    border-bottom: solid 2px white
+.main-app .menu-driver a
+    color: white!important
+    @media (max-width: $break-medium)
+        text-align: center
+.main-app .container-fluid
+    height: 100vh
+.main-app .justify-content-end .nav-item a
+    color: white!important
+.main-slider-img
+    height: 100vh
+    object-fit: cover
+.main-app .carousel-item
+    min-height: 100vh
+    background-size: cover!important
+
+.main-app .carousel-item.active
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+.main-app .carousel-item .divider
+    border-top: solid 5px white
+    width: 250px
+    margin-bottom: 20px
+.main-app .display-2
+    @media (max-width: $break-medium)
+        font-size: 3.5rem
+.main-app .navbar
+    box-shadow: none
+.main-app .navbar-collapse
+    @media (max-width: $break-small)
+        background: #383d41bd
+        padding: 50px 0

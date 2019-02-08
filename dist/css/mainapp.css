@@ -1,0 +1,60 @@
+.main-app .main-app__navbar {
+  background: transparent !important; }
+
+.main-app .carousel-inner {
+  max-height: 100vh !important; }
+
+.main-app .main-app__navbar {
+  position: absolute;
+  z-index: 999;
+  width: 100%; }
+
+.main-app .col-md-12 {
+  padding: 0 !important; }
+
+.main-app .menu-driver.active {
+  border-bottom: solid 2px white; }
+
+.main-app .menu-driver a {
+  color: white !important; }
+  @media (max-width: 768px) {
+    .main-app .menu-driver a {
+      text-align: center; } }
+
+.main-app .container-fluid {
+  height: 100vh; }
+
+.main-app .justify-content-end .nav-item a {
+  color: white !important; }
+
+.main-slider-img {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.main-app .carousel-item {
+  min-height: 100vh;
+  background-size: cover !important; }
+
+.main-app .carousel-item.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.main-app .carousel-item .divider {
+  border-top: solid 5px white;
+  width: 250px;
+  margin-bottom: 20px; }
+
+@media (max-width: 768px) {
+  .main-app .display-2 {
+    font-size: 3.5rem; } }
+
+.main-app .navbar {
+  box-shadow: none; }
+
+@media (max-width: 390px) {
+  .main-app .navbar-collapse {
+    background: #383d41bd;
+    padding: 50px 0; } }

@@ -1,0 +1,101 @@
+// MAIN TEMPLATING CODE GOES HERE
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700|Roboto:300,400,500,700')
+
+// Font and colors variables
+$primary: #00edb5
+$secondary: #fe8e78
+$white: #ffffff
+$light-dark: #545454
+$black: #303030
+$gray: #7f7f7f
+$button-font: Roboto, san-seriff
+$break-small: 390px
+$break-medium: 768px
+$break-large: 1200px
+body
+    background: blue
+//Antenna font for the titles
+@font-face
+    font-family: 'Ford Antenna Medium'
+    font-style: normal
+    font-weight: normal
+    src: local('Ford Antenna Medium'), url('../fonts/ford-antenna-medium-58955836e60d2.woff') format('woff')
+@font-face
+    font-family: 'Ford Antenna Regular XCnd'
+    font-style: normal
+    font-weight: normal
+    src: local('Ford Antenna Regular XCnd'), url('../fonts/ford-antenna-regular-xcnd-589558121012a.woff') format('woff')
+
+h1,h2,h3,h4,h5,h6
+    font-family: 'Ford Antenna Medium', 'Roboto'!important
+p, li, span
+    font-family: 'Quicksand'!important
+    color: $light-dark
+
+.btn
+    transition: all  1s
+    text-transform: uppercase
+    font-size: 14px!important
+    min-width: 200px!important
+.btn:hover
+    box-shadow: 0px 15px 20px rgba(111, 111, 111, 0.4)
+    transform: translateY(-2px)
+.btn-primary
+    background-color: $primary!important
+    border-color: $primary!important
+    color: $light-dark!important
+    font-weight: bold!important
+.btn-primary:hover
+    background-color: $primary!important
+    border-color: $primary!important
+    color: $light-dark!important
+.btn-primary-light
+    background-color: $primary!important
+    border-color: $primary!important
+    color: $white!important
+    font-weight: bold!important
+.btn-primary-light:hover
+    background-color: $primary!important
+    border-color: $primary!important
+    color: $white!important
+.btn-white
+    background-color: $white!important
+    border-color: $white!important
+    color: $light-dark!important
+    font-weight: bold!important
+.btn-white:hover
+    background-color: $white!important
+    border-color: $white!important
+    color: $light-dark!important
+// NAVBAR CODE IMPORT
+.btn-secondary
+    background-color: $secondary!important
+    border-color: $secondary!important
+    color: $light-dark!important
+    font-weight: bold!important
+.btn-secondary:hover
+    background-color: $secondary!important
+    border-color: $secondary!important
+    color: $light-dark!important
+.btn-secondary-light
+    background-color: $secondary!important
+    border-color: $secondary!important
+    color: $white!important
+    font-weight: bold!important
+.btn-secondary-light:hover
+    background-color: $secondary!important
+    border-color: $secondary!important
+    color: $white!important
+.app-wrapper
+    background: #f9f9f9
+    min-height: 100vh;
+
+
+// NAVBAR CODE IMPORT
+@import 'navbar-module'
+// Main app screen module
+@import 'mainapp'
+// Log, register and revocer password
+@import 'log-module'
+// Log, register and revocer password
+@import 'afterProjectModule'

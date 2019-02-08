@@ -1,0 +1,103 @@
+$primary: #00edb5
+$secondary: #fe8e78
+$white: #ffffff
+$light-dark: #545454
+$black: #303030
+$gray: #7f7f7f
+$button-font: Roboto, san-seriff
+$break-small: 390px
+$break-medium: 768px
+$break-large: 1200px
+
+.main-app__navbar .navbar .the-brand
+    height: 70px
+.nav-notification
+    position: relative
+    top: 7px
+.nav-notification .dropdown-toggle::after
+    display: none!important
+.dropdown-menu
+    border: none!important
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+.nav-item
+    margin: 0 20px
+.main-app__navbar li
+    font-weight: bold
+.notify-drop
+    right: 0!important
+    left: unset!important
+    width: 290px
+    border: none
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+    height: 400px
+    overflow-y: scroll
+.the-notification .notification-img img
+    width: 20px
+    height: 20px
+    border-radius: 60px
+.the-notification
+    display: flex
+    padding: 15px 20px 10px 20px
+.the-notification .notification-content
+    padding: 0 20px
+.the-notification .notification-info
+    margin: 0
+    font-size: 11px
+.the-notification .notification-time
+    font-size: 13px
+.the-notification .divider
+    width: 100%
+    padding: 5px 10px
+    border-top: solid 1px #eaeaea
+.the-notification .notification-inner
+    display: flex
+.notification-counter
+    background: #00edb5
+    width: 20px
+    height: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 10px
+    border-radius: 100%
+    color: white
+    font-size: 10px
+    position: absolute
+    top: -15px
+    right: -15px
+    @media (max-width: $break-small)
+        top: -10px
+        left: 180px
+        right: unset
+.navbar-light .navbar-brand
+    @media (max-width: $break-small)
+        width: 80px!important
+.nav-notification
+    @media (max-width: $break-small)
+        text-align: center
+        margin: 10px 30px
+
+.navbar-toggler
+    background: $secondary!important
+.navbar
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05)
+.justify-content-end .nav-item a
+    color: $light-dark!important
+.dropdown-toggle
+    display: flex!important
+    justify-content: center!important
+    align-items: center!important
+.menu-driver.active
+    border-bottom: solid 2px $secondary
+.dropdown-item.active, .dropdown-item:active
+    color: #fff
+    text-decoration: none
+    background-color: $secondary!important
+    font-size: 14px!important
+.dropdown-item
+    font-size: 13px!important
+.main-app__navbar
+    background: $white;
+.menu-driver a
+    @media (max-width: $break-small)
+        text-align: center
