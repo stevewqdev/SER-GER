@@ -1,0 +1,130 @@
+.participant-info .user-avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%; }
+
+.chat-wrapper {
+  padding: 50px; }
+  @media (max-width: 390px) {
+    .chat-wrapper {
+      padding: 10px; } }
+
+.chat-window {
+  background: white; }
+
+.chat-content {
+  padding: 50px; }
+
+.chat-controller {
+  border: solid 1px darkgrey; }
+
+.chat-controller form {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 0 20px;
+  align-items: center; }
+  @media (max-width: 390px) {
+    .chat-controller form {
+      flex-direction: column;
+      padding: 20px; } }
+
+.chat-controller form .form-group {
+  margin: 0; }
+
+.chat-controller form .chat-input {
+  width: 400px;
+  height: 70px;
+  border: navajowhite; }
+  @media (max-width: 768px) {
+    .chat-controller form .chat-input {
+      width: 300px; } }
+  @media (max-width: 390px) {
+    .chat-controller form .chat-input {
+      width: 100%; } }
+
+.chat-info {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: white;
+  padding: 10px; }
+
+.chat-info p {
+  font-size: 12px;
+  margin: 0; }
+
+.chat-info p span {
+  color: #fe8e78;
+  font-weight: bold; }
+
+.chat-controller form .fa-paperclip {
+  position: relative;
+  left: -20px;
+  cursor: pointer !important; }
+  @media (max-width: 390px) {
+    .chat-controller form .fa-paperclip {
+      margin: 10px 0;
+      border: solid 1px #00edb5;
+      padding: 12px;
+      border-radius: 100%;
+      background: #e0e0e0;
+      margin-top: 10px; } }
+
+.message-received .message-content, .message-sended .message-content {
+  max-width: 300px;
+  border-radius: 4px;
+  margin: 20px 0; }
+
+.message-content {
+  padding: 10px; }
+
+.message-content p {
+  margin: 0; }
+
+.message-received {
+  display: flex;
+  justify-content: flex-start; }
+
+.message-sended {
+  display: flex;
+  justify-content: flex-end; }
+
+.message-sended .message-content {
+  border: solid 1px #fe8e78; }
+
+@media (max-width: 390px) {
+  .chat-window-wrapper {
+    margin: 20px 0; } }
+
+.participant-info {
+  padding: 50px; }
+
+.participant-info .user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.participant-info .user-info .user-avatar {
+  margin: 20px 0; }
+
+.complementary-info .user-rank {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px; }
+
+.complementary-info .user-rank .fa-star.full {
+  color: #00edb5; }
+
+.complementary-info .user-rank .fa-star {
+  color: #eaeaea; }
+
+.complementary-info .user-stats p {
+  text-align: center; }
+
+.chat-content {
+  min-height: 70vh;
+  max-height: 70vh;
+  overflow-y: scroll; }

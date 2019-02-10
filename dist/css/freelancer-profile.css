@@ -1,0 +1,82 @@
+.portfolio .portfolio-thumbnails .the-portfolio-item img {
+  width: 200px !important;
+  height: 200px !important;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.profile-progress, .profile-progress .title, .profile, .profile .title, .perks, .perks .title, .portfolio, .portfolio .title, .portfolio-thumbnails {
+  margin: 30px 0; }
+
+.profile-cards .title {
+  margin: 0;
+  padding: 0; }
+
+.profile-cards.first-card {
+  margin: 0 !important; }
+
+.profile-cards .card {
+  padding: 20px; }
+
+.profile-card-button {
+  display: flex;
+  justify-content: flex-end; }
+
+.profile-card-form .form-group button {
+  margin: 20px 0; }
+
+.profile .profile-cards {
+  margin: 50px 0; }
+
+.profile-card-form {
+  margin: 20px 0; }
+
+.profile-card-form.disabled {
+  display: none; }
+
+.profile-card-form.enabled {
+  display: block; }
+
+.badge-light.enabled {
+  display: inline; }
+
+.badge-light.disabled {
+  display: none !important; }
+
+.profile .user-avatar img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%; }
+
+.profile .user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+  background: white; }
+
+.profile .complementary-info .user-rank {
+  display: flex;
+  justify-content: center;
+  margin: 20px; }
+
+.profile .user-name {
+  margin: 20px 0 0 0; }
+
+.user-especialization {
+  padding: 30px;
+  margin: 20px 0;
+  text-align: center; }
+
+.the-portfolio-item {
+  margin: 20px 0; }
+  @media (max-width: 768px) {
+    .the-portfolio-item {
+      align-items: center;
+      display: flex;
+      justify-content: center; } }
+
+.profile-card-button {
+  margin: 20px 0; }

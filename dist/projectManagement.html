@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Servilance - Project Managemente</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <div class="app-wrapper">
+        <!-- Navbar -->
+        <div class="main-app__navbar">
+                <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+                        <a href="/" class="navbar-brand d-flex w-50 mr-auto"><img src="images/logo/logo.png" alt="" class="the-brand"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                            <ul class="navbar-nav w-100 justify-content-center">
+                                <li class="nav-item  active menu-driver dropdown">
+                                    <a class="nav-link  dropdown-toggle" type="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Store</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item menu-driver">
+                                    <a class="nav-link" href="//codeply.com">Informacion</a>
+                                </li>
+                                <li class="nav-item  menu-driver dropdown">
+                                        <a class="nav-link dropdown-toggle" type="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Publicar</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                </li>
+                                <li class="nav-item  menu-driver dropdown">
+                                        <a class="nav-link dropdown-toggle" type="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Trabajar</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                                <li class="dropdown nav-item nav-notification">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-comment"></i></a>
+                                            <div class="notification-counter">1</div>
+                                            <ul class="dropdown-menu notify-drop">
+                                                <!-- notify content -->
+                                                <div class="drop-content">
+                                                    <a href="#">
+                                                        <li class="the-notification d-flex flex-column">
+                                                            <div class="notification-inner ">
+                                                                <div class="notification-img">
+                                                                    <img src="images/ads/colors.jpg" alt="">
+                                                                </div>
+                                                                <div class="notification-content">
+                                                                    <p class="notification-info"><strong>Tienes un nuevo mensaje de Carlor Thode</strong></p>
+                                                                    <p class="notification-time"><small>Hace 5 horas</small></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="divider"></div>
+                                                        </li>
+
+                                                    </a>
+                                                    <a href="#">
+                                                        <li class="the-notification d-flex flex-column">
+                                                            <div class="notification-inner ">
+                                                                <div class="notification-img">
+                                                                    <img src="images/ads/colors.jpg" alt="">
+                                                                </div>
+                                                                <div class="notification-content">
+                                                                    <p class="notification-info"><strong>Tienes un nuevo mensaje de Carlor Thode</strong></p>
+                                                                    <p class="notification-time"><small>Hace 5 horas</small></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="divider"></div>
+                                                        </li>
+
+                                                    </a>
+                                                    <a href="#">
+                                                        <li class="the-notification d-flex flex-column">
+                                                            <div class="notification-inner ">
+                                                                <div class="notification-img">
+                                                                    <img src="images/ads/colors.jpg" alt="">
+                                                                </div>
+                                                                <div class="notification-content">
+                                                                    <p class="notification-info"><strong>Tienes un nuevo mensaje de Carlor Thode</strong></p>
+                                                                    <p class="notification-time"><small>Hace 5 horas</small></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="divider"></div>
+                                                        </li>
+
+                                                    </a>
+                                                    <a href="#">
+                                                        <li class="the-notification d-flex flex-column">
+                                                            <div class="notification-inner ">
+                                                                <div class="notification-img">
+                                                                    <img src="images/ads/colors.jpg" alt="">
+                                                                </div>
+                                                                <div class="notification-content">
+                                                                    <p class="notification-info"><strong>Tienes un nuevo mensaje de Carlor Thode</strong></p>
+                                                                    <p class="notification-time"><small>Hace 5 horas</small></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="divider"></div>
+                                                        </li>
+
+                                                    </a>
+                                                    <a href="#">
+
+                                                        <li class="the-notification d-flex flex-column">
+                                                            <div class="notification-inner ">
+                                                                <div class="notification-img">
+                                                                    <img src="images/ads/colors.jpg" alt="">
+                                                                </div>
+                                                                <div class="notification-content">
+                                                                    <p class="notification-info"><strong>Tienes un nuevo mensaje de Carlor Thode</strong></p>
+                                                                    <p class="notification-time"><small>Hace 5 horas</small></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="divider"></div>
+                                                        </li>
+                                                    </a>
+                                                    <a href="#">
+
+                                                        <li class="the-notification d-flex flex-column">
+                                                            <div class="notification-inner ">
+                                                                <div class="notification-img">
+                                                                    <img src="images/ads/colors.jpg" alt="">
+                                                                </div>
+                                                                <div class="notification-content">
+                                                                    <p class="notification-info"><strong>Tienes un nuevo mensaje de Carlor Thode</strong></p>
+                                                                    <p class="notification-time"><small>Hace 5 horas</small></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="divider"></div>
+                                                        </li>
+                                                    </a>
+                                                </div>
+                                            </ul>
+                                </li>
+                                <li class="dropdown nav-item nav-notification">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-bell"></i></a>
+                                        <div class="notification-counter">1</div>
+                                        <ul class="dropdown-menu notify-drop">
+                                            <!-- notify content -->
+                                            <div class="drop-content">
+                                                <a href="#">
+                                                    <li class="the-notification d-flex flex-column">
+                                                        <div class="notification-inner ">
+                                                            <div class="notification-img">
+                                                                <img src="images/ads/colors.jpg" alt="">
+                                                            </div>
+                                                            <div class="notification-content">
+                                                                <p class="notification-info"><strong>Robert ha aceptado tu propuesta</strong></p>
+                                                                <p class="notification-time"><small>Hace 5 horas</small></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                    </li>
+
+                                                </a>
+                                                <a href="#">
+                                                    <li class="the-notification d-flex flex-column">
+                                                        <div class="notification-inner ">
+                                                            <div class="notification-img">
+                                                                <img src="images/ads/colors.jpg" alt="">
+                                                            </div>
+                                                            <div class="notification-content">
+                                                                <p class="notification-info"><strong>Robert ha aceptado tu propuesta</strong></p>
+                                                                <p class="notification-time"><small>Hace 5 horas</small></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                    </li>
+
+                                                </a>
+                                                <a href="#">
+                                                    <li class="the-notification d-flex flex-column">
+                                                        <div class="notification-inner ">
+                                                            <div class="notification-img">
+                                                                <img src="images/ads/colors.jpg" alt="">
+                                                            </div>
+                                                            <div class="notification-content">
+                                                                <p class="notification-info"><strong>Robert ha aceptado tu propuesta</strong></p>
+                                                                <p class="notification-time"><small>Hace 5 horas</small></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                    </li>
+
+                                                </a>
+                                                <a href="#">
+                                                    <li class="the-notification d-flex flex-column">
+                                                        <div class="notification-inner ">
+                                                            <div class="notification-img">
+                                                                <img src="images/ads/colors.jpg" alt="">
+                                                            </div>
+                                                            <div class="notification-content">
+                                                                <p class="notification-info"><strong>Robert ha aceptado tu propuesta</strong></p>
+                                                                <p class="notification-time"><small>Hace 5 horas</small></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                    </li>
+
+                                                </a>
+                                                <a href="#">
+
+                                                    <li class="the-notification d-flex flex-column">
+                                                        <div class="notification-inner ">
+                                                            <div class="notification-img">
+                                                                <img src="images/ads/colors.jpg" alt="">
+                                                            </div>
+                                                            <div class="notification-content">
+                                                                <p class="notification-info"><strong>Robert ha aceptado tu propuesta</strong></p>
+                                                                <p class="notification-time"><small>Hace 5 horas</small></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+
+                                                    <li class="the-notification d-flex flex-column">
+                                                        <div class="notification-inner ">
+                                                            <div class="notification-img">
+                                                                <img src="images/ads/colors.jpg" alt="">
+                                                            </div>
+                                                            <div class="notification-content">
+                                                                <p class="notification-info"><strong>Robert ha aceptado tu propuesta</strong></p>
+                                                                <p class="notification-time"><small>Hace 5 horas</small></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                    </li>
+                                                </a>
+                                            </div>
+                                        </ul>
+                                </li>
+                                <li class="nav-item nav-notification" style="top:0">
+                                    <a class="nav-link" href="#"><i class="far fa-user"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+        </div>
+        <!--End of navbar -->
+        <!-- Body -->
+        <div class="project-finder">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="title">TUS PROYECTOS</h2>
+                        <div class="type-profile-selector">
+                            <button class="btn btn-white active">EMPLEADOR</button>
+                            <button class="btn btn-white freelancer-btn">FREELANCER</button>
+                        </div>
+                        <div class="project-filter">
+                            <div class="open-projects first-item item">
+                                <p>Abiertos</p>
+                            </div>
+                            <div class="on-going-projects active item">
+                                <p>Trabajos en curso</p>
+                            </div>
+                            <div class="finished-projects item">
+                                <p>Proyectos Anteriores</p>
+
+                            </div>
+                        </div>
+                        <div class="project-filter-form">
+                            <form action="">
+                                <div class="form-row align-items-center">
+                                    <div class="col-sm-5 my-1">
+                                      <label class="sr-only" for="inlineFormInputName"></label>
+                                      <input type="text" class="form-control" id="inlineFormInputName" placeholder="Nombre del proyecto">
+                                    </div>
+                                    <div class="col-sm-3 my-1">
+                                      <label class="sr-only" for="inlineFormInputGroupUsername">ID del proyecto</label>
+                                      <div class="input-group">
+                                        <input type="text" class="form-control project-number" id="inlineFormInputGroupUsername" placeholder="Numero del proyecto">
+                                      </div>
+                                    </div>
+                                    <div class="col-auto my-1 form-button-wrapper">
+                                      <button type="submit" class="btn btn-primary filter-form-button"><i class="fas fa-search"></i></button>
+                                    </div>
+                                  </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-manager-results">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="title">Trabajos en curso</h3>
+                        <div class="projects-results row">
+                            <div class="result shadow col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="result-id">
+                                    <p>Proyecto #16 - Crear un website en wordpress</p>
+                                </div>
+                                <div class="result-content">
+                                    <p><strong>Nombre del proyecto</strong></p>
+                                    <p><small>Crear un website en wordpress</small></p>
+                                    <p><strong>Adjudicado a</strong></p>
+                                    <p><small>Isaura Teixeira</small></p>
+                                    <p><strong>Fecha de inicio / fin</strong></p>
+                                    <p><small>04/12/19 / <span class="fecha-cierre">En proceso</span></small></p>
+                                    <div class="result-chat">
+                                            <i class="fas fa-comment-alt"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="result shadow col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                    <div class="result-id">
+                                        <p>Proyecto #16 - Crear un website en wordpress</p>
+                                    </div>
+                                    <div class="result-content">
+                                        <p><strong>Nombre del proyecto</strong></p>
+                                        <p><small>Crear un website en wordpress</small></p>
+                                        <p><strong>Adjudicado a</strong></p>
+                                        <p><small>Isaura Teixeira</small></p>
+                                        <p><strong>Fecha de inicio / fin</strong></p>
+                                        <p><small>04/12/19 / <span class="fecha-cierre">En proceso</span></small></p>
+                                        <div class="result-chat">
+                                                <i class="fas fa-comment-alt"></i>
+                                        </div>
+
+                                    </div>
+                            </div>
+                            <div class="result shadow col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="result-id">
+                                            <p>Proyecto #16 - Crear un website en wordpress</p>
+                                        </div>
+                                        <div class="result-content">
+                                            <p><strong>Nombre del proyecto</strong></p>
+                                            <p><small>Crear un website en wordpress</small></p>
+                                            <p><strong>Adjudicado a</strong></p>
+                                            <p><small>Isaura Teixeira</small></p>
+                                            <p><strong>Fecha de inicio / fin</strong></p>
+                                            <p><small>04/12/19 / <span class="fecha-cierre">En proceso</span></small></p>
+                                            <div class="result-chat">
+                                                    <i class="fas fa-comment-alt"></i>
+                                            </div>
+
+                                        </div>
+                            </div>
+                            <div class="result shadow col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                    <div class="result-id">
+                                        <p>Proyecto #16 - Crear un website en wordpress</p>
+                                    </div>
+                                    <div class="result-content">
+                                        <p><strong>Nombre del proyecto</strong></p>
+                                        <p><small>Crear un website en wordpress</small></p>
+                                        <p><strong>Adjudicado a</strong></p>
+                                        <p><small>Isaura Teixeira</small></p>
+                                        <p><strong>Fecha de inicio / fin</strong></p>
+                                        <p><small>04/12/19 / <span class="fecha-cierre">En proceso</span></small></p>
+                                        <div class="result-chat">
+                                                <i class="fas fa-comment-alt"></i>
+                                        </div>
+
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- EO Body -->
+    </div>
+    <script src="js/functions.js"></script>
+</body>
+</html>

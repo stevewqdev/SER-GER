@@ -89,7 +89,12 @@ p, li, span
 .app-wrapper
     background: #f9f9f9
     min-height: 100vh;
-
+.bg-success
+    background-color: $primary!important
+    border-color: $primary!important
+.badge-light
+    color: #212529;
+    border: solid 1px $primary;
 
 // NAVBAR CODE IMPORT
 @import 'navbar-module'
@@ -99,3 +104,9 @@ p, li, span
 @import 'log-module'
 // Log, register and revocer password
 @import 'afterProjectModule'
+// Project manager view styles
+@import 'project-manager'
+// Project manager view styles
+@import 'chat-screen'
+// Freelancer profile
+@import 'freelancer-profile'

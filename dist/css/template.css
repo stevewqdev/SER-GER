@@ -91,6 +91,14 @@ p, li, span {
   background: #f9f9f9;
   min-height: 100vh; }
 
+.bg-success {
+  background-color: #00edb5 !important;
+  border-color: #00edb5 !important; }
+
+.badge-light {
+  color: #212529;
+  border: solid 1px #00edb5; }
+
 .main-app__navbar .navbar .the-brand {
   height: 70px; }
 
@@ -526,3 +534,372 @@ p, li, span {
 
 .your-project-steps .step-number.last-number:after {
   display: none; }
+
+.project-finder .type-profile-selector .btn-white.active {
+  background: #00edb5 !important;
+  border-color: #00edb5 !important;
+  position: relative;
+  z-index: 999;
+  border-radius: 0 20px 20px 0;
+  transition: all ease-in-out .3s; }
+
+@media (max-width: 390px) {
+  .project-finder .type-profile-selector .btn-white {
+    min-width: 150px !important; } }
+
+.project-finder .type-profile-selector .freelancer-btn {
+  position: relative;
+  left: -30px;
+  transition: all ease-in-out .3s; }
+
+.project-finder .project-filter {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  margin: 40px 0 10px 0; }
+
+.project-finder .open-projects p, .on-going-projects p, .finished-projects p {
+  color: white;
+  margin: 0px 20px;
+  cursor: pointer; }
+
+.project-finder .open-projects.active p, .on-going-projects.active p, .finished-projects.active p {
+  font-weight: bold;
+  border-bottom: solid 2px white; }
+  @media (max-width: 390px) {
+    .project-finder .open-projects.active p, .on-going-projects.active p, .finished-projects.active p {
+      text-align: center; } }
+
+.project-finder .project-number {
+  position: relative;
+  left: -20px; }
+  @media (max-width: 390px) {
+    .project-finder .project-number {
+      left: 0px; } }
+
+.project-finder .project-filter-form input {
+  height: 60px; }
+
+.project-finder .filter-form-button {
+  width: 61px !important;
+  min-width: auto !important;
+  height: 60px;
+  font-size: 23px !important; }
+
+.project-finder {
+  align-items: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  background: url(../images/ads/colors.jpg);
+  background-size: cover; }
+
+.project-finder .type-profile-selector .btn:hover, .project-finder .project-filter-form .btn:hover {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px); }
+
+.project-filter .first-item p {
+  margin-left: 1px; }
+
+.project-finder .title {
+  color: white;
+  margin: 15px 0; }
+
+/* Project Manager Results */
+.project-manager-results {
+  padding: 100px 15px; }
+
+.project-manager-results .projects-results {
+  display: flex;
+  justify-content: space-between; }
+
+.project-manager-results .title {
+  margin: 0 0 50px 0; }
+
+.project-manager-results .result {
+  position: relative;
+  margin: 20px 10px;
+  padding: 20px 20px 40px 20px; }
+  @media (max-width: 768px) {
+    .project-manager-results .result {
+      margin: 20px -3px; } }
+  @media (max-width: 390px) {
+    .project-manager-results .result {
+      margin: 20px; } }
+
+.project-manager-results .result-id {
+  position: relative;
+  left: -20px;
+  padding: 10px 10px 10px 20px;
+  background: #fe8e78;
+  border-radius: 0 0px 0px 0;
+  margin: 10px 0; }
+
+.project-manager-results .result-id p {
+  margin: 0;
+  color: #ffffff;
+  font-weight: bold; }
+
+.project-manager-results .result-content small {
+  border-bottom: solid 1px #fe8e78; }
+
+.project-manager-results .result-content .result-chat {
+  position: absolute;
+  bottom: 20px;
+  right: 30px; }
+
+.project-manager-results .result-content .result-chat .fas {
+  color: #fe8e78; }
+
+.result-content .fecha-cierre {
+  color: #00edb5;
+  font-weight: bold; }
+
+.project-filter-form ::-webkit-input-placeholder {
+  color: black !important;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute !important;
+  top: -10px !important; }
+
+.project-filter-form :-ms-input-placeholder {
+  color: black !important;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute !important;
+  top: -10px !important; }
+
+.project-filter-form ::-ms-input-placeholder {
+  color: black !important;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute !important;
+  top: -10px !important; }
+
+.project-filter-form ::placeholder {
+  color: black !important;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute !important;
+  top: -10px !important; }
+
+@media (max-width: 390px) {
+  .form-button-wrapper {
+    position: absolute !important;
+    bottom: 0 !important;
+    right: 10px !important;
+    z-index: 999 !important; } }
+
+.participant-info .user-avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%; }
+
+.chat-wrapper {
+  padding: 50px; }
+  @media (max-width: 390px) {
+    .chat-wrapper {
+      padding: 10px; } }
+
+.chat-window {
+  background: white; }
+
+.chat-content {
+  padding: 50px; }
+
+.chat-controller {
+  border: solid 1px darkgrey; }
+
+.chat-controller form {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 0 20px;
+  align-items: center; }
+  @media (max-width: 390px) {
+    .chat-controller form {
+      flex-direction: column;
+      padding: 20px; } }
+
+.chat-controller form .form-group {
+  margin: 0; }
+
+.chat-controller form .chat-input {
+  width: 400px;
+  height: 70px;
+  border: navajowhite; }
+  @media (max-width: 768px) {
+    .chat-controller form .chat-input {
+      width: 300px; } }
+  @media (max-width: 390px) {
+    .chat-controller form .chat-input {
+      width: 100%; } }
+
+.chat-info {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: white;
+  padding: 10px; }
+
+.chat-info p {
+  font-size: 12px;
+  margin: 0; }
+
+.chat-info p span {
+  color: #fe8e78;
+  font-weight: bold; }
+
+.chat-controller form .fa-paperclip {
+  position: relative;
+  left: -20px;
+  cursor: pointer !important; }
+  @media (max-width: 390px) {
+    .chat-controller form .fa-paperclip {
+      margin: 10px 0;
+      border: solid 1px #00edb5;
+      padding: 12px;
+      border-radius: 100%;
+      background: #e0e0e0;
+      margin-top: 10px; } }
+
+.message-received .message-content, .message-sended .message-content {
+  max-width: 300px;
+  border-radius: 4px;
+  margin: 20px 0; }
+
+.message-content {
+  padding: 10px; }
+
+.message-content p {
+  margin: 0; }
+
+.message-received {
+  display: flex;
+  justify-content: flex-start; }
+
+.message-sended {
+  display: flex;
+  justify-content: flex-end; }
+
+.message-sended .message-content {
+  border: solid 1px #fe8e78; }
+
+@media (max-width: 390px) {
+  .chat-window-wrapper {
+    margin: 20px 0; } }
+
+.participant-info {
+  padding: 50px; }
+
+.participant-info .user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.participant-info .user-info .user-avatar {
+  margin: 20px 0; }
+
+.complementary-info .user-rank {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px; }
+
+.complementary-info .user-rank .fa-star.full {
+  color: #00edb5; }
+
+.complementary-info .user-rank .fa-star {
+  color: #eaeaea; }
+
+.complementary-info .user-stats p {
+  text-align: center; }
+
+.chat-content {
+  min-height: 70vh;
+  max-height: 70vh;
+  overflow-y: scroll; }
+
+.portfolio .portfolio-thumbnails .the-portfolio-item img {
+  width: 200px !important;
+  height: 200px !important;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.profile-progress, .profile-progress .title, .profile, .profile .title, .perks, .perks .title, .portfolio, .portfolio .title, .portfolio-thumbnails {
+  margin: 30px 0; }
+
+.profile-cards .title {
+  margin: 0;
+  padding: 0; }
+
+.profile-cards.first-card {
+  margin: 0 !important; }
+
+.profile-cards .card {
+  padding: 20px; }
+
+.profile-card-button {
+  display: flex;
+  justify-content: flex-end; }
+
+.profile-card-form .form-group button {
+  margin: 20px 0; }
+
+.profile .profile-cards {
+  margin: 50px 0; }
+
+.profile-card-form {
+  margin: 20px 0; }
+
+.profile-card-form.disabled {
+  display: none; }
+
+.profile-card-form.enabled {
+  display: block; }
+
+.badge-light.enabled {
+  display: inline; }
+
+.badge-light.disabled {
+  display: none !important; }
+
+.profile .user-avatar img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%; }
+
+.profile .user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+  background: white; }
+
+.profile .complementary-info .user-rank {
+  display: flex;
+  justify-content: center;
+  margin: 20px; }
+
+.profile .user-name {
+  margin: 20px 0 0 0; }
+
+.user-especialization {
+  padding: 30px;
+  margin: 20px 0;
+  text-align: center; }
+
+.the-portfolio-item {
+  margin: 20px 0; }
+  @media (max-width: 768px) {
+    .the-portfolio-item {
+      align-items: center;
+      display: flex;
+      justify-content: center; } }
+
+.profile-card-button {
+  margin: 20px 0; }
