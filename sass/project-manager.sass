@@ -4,8 +4,9 @@ $white: #ffffff
 $light-dark: #545454
 $black: #303030
 $gray: #7f7f7f
+$footer-background: #2c2956
 $button-font: Roboto, san-seriff
-$break-small: 390px
+$break-small: 480px
 $break-medium: 768px
 $break-large: 1200px
 
@@ -19,6 +20,8 @@ $break-large: 1200px
 .project-finder  .type-profile-selector .btn-white
     @media (max-width: $break-small)
         min-width: 150px !important;
+        left: 0px!important
+        margin: 10px 0
 .project-finder  .type-profile-selector .freelancer-btn
     position: relative;
     left: -30px;
@@ -29,6 +32,10 @@ $break-large: 1200px
     justify-content: unset;
     align-items: center;
     margin: 40px 0 10px 0;
+    @media (max-width: $break-small)
+        flex-direction: column
+.project-finder  .project-filter .item
+    margin: 10px 0
 .project-finder  .open-projects p, .on-going-projects p, .finished-projects p
     color: white;
     margin: 0px 20px;
@@ -43,6 +50,11 @@ $break-large: 1200px
     left: -20px;
     @media (max-width: $break-small)
         left: 0px;
+.project-finder  .categorie
+    position: relative;
+    left: -35px;
+    @media (max-width: $break-small)
+        left: 0px;
 .project-finder  .project-filter-form input
     height: 60px;
 .project-finder .filter-form-button
@@ -50,7 +62,7 @@ $break-large: 1200px
     min-width: auto!important;
     height: 60px;
     font-size: 23px!important;
-.project-finder
+.project-manager .project-finder
     align-items: center;
     height: 500px;
     display: flex;
@@ -113,5 +125,11 @@ $break-large: 1200px
     @media (max-width: $break-small)
         position: absolute!important
         bottom: 0!important
+        right: 10px!important
+        z-index: 999!important
+.home-layout .form-button-wrapper
+    @media (max-width: $break-small)
+        position: absolute!important
+        bottom: 48px!important
         right: 10px!important
         z-index: 999!important

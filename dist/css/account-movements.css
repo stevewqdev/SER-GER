@@ -1,0 +1,52 @@
+.account-movements .top-title-wrapper {
+  background: #00edb5;
+  width: 100%;
+  padding: 30px 50px; }
+
+.account-movements .top-title-wrapper h5 {
+  color: #545454;
+  margin: 0;
+  padding: 0; }
+
+.account-movements .inner-card {
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0; }
+
+.account-movements .inner-card p {
+  margin: 0; }
+
+.account-movements .row-inner-card {
+  padding: 50px 20px; }
+
+.payment-methods-wrapper .card-payment {
+  padding: 20px; }
+
+.payment-methods-wrapper .card-payment .cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.payment-methods-wrapper .card-payment .cta img {
+  height: 80px;
+  margin: 20px 0; }
+
+.payment-methods-wrapper .card-payment .cta .btn {
+  margin: 15px; }
+
+.payment-methods-wrapper {
+  width: 100%; }
+
+.add-money {
+  padding: 20px;
+  margin-bottom: 30px; }
+
+.add-money .col-lg-12 {
+  padding: 0; }
+
+.add-money .title {
+  margin: 20px 0; }
+
+.add-money .inner-full-col {
+  padding: 20px; }

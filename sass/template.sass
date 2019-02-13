@@ -8,12 +8,13 @@ $white: #ffffff
 $light-dark: #545454
 $black: #303030
 $gray: #7f7f7f
+$footer-background: #2c2956
 $button-font: Roboto, san-seriff
 $break-small: 390px
 $break-medium: 768px
 $break-large: 1200px
 body
-    background: blue
+    background-color: #f9f9f9!important
 //Antenna font for the titles
 @font-face
     font-family: 'Ford Antenna Medium'
@@ -95,11 +96,44 @@ p, li, span
 .badge-light
     color: #212529;
     border: solid 1px $primary;
-
+.primary-text
+    color: $primary
+.secondary-text
+    color: $secondary
+.icon-primary .fas
+    color: $primary
+    margin: 0 10px
+.icon-secondary .fas
+    color: $secondary
+    margin: 0 10px
+.btn-light-empty
+    border: solid 1px $light-dark!important
+    background: transparent!important
+    color: $light-dark!important
+.btn-light-empty:hover
+    border: solid 1px $light-dark!important
+    background: $light-dark!important
+    color: $white!important
+.btn-light-empty-white
+    border: solid 1px $white!important
+    background: transparent!important
+    color: $white!important
+.btn-light-empty-white:hover
+    border: solid 1px $light-dark!important
+    background: $light-dark!important
+    color: $white!important
+.primary-card-border
+    border-left: solid 10px $primary!important
+.secondary-card-border
+    border-left: solid 10px $secondary!important
 // NAVBAR CODE IMPORT
 @import 'navbar-module'
+@import 'subnavbar-module'
+
 // Main app screen module
 @import 'mainapp'
+// Main app screen module
+@import 'home-module'
 // Log, register and revocer password
 @import 'log-module'
 // Log, register and revocer password
@@ -110,3 +144,9 @@ p, li, span
 @import 'chat-screen'
 // Freelancer profile
 @import 'freelancer-profile'
+// Profile module for position and info
+@import 'profile-position'
+// Profile module for position and info
+@import 'account-movements'
+// Footer
+@import 'footer-module'

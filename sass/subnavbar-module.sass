@@ -1,0 +1,48 @@
+$primary: #00edb5
+$secondary: #fe8e78
+$white: #ffffff
+$light-dark: #545454
+$black: #303030
+$gray: #7f7f7f
+$footer-background: #2c2956
+$button-font: Roboto, san-seriff
+$break-small: 390px
+$break-medium: 768px
+$break-large: 1200px
+
+.sub_navbar .navbar
+    background-color: transparent!important
+    background: transparent!important
+    border: none!important
+    box-shadow: none!important
+    padding: 20px 0
+.sub_navbar #navbarNav
+    width: 100%!important
+.sub_navbar .navbar-nav
+    @media (max-width: $break-medium)
+        display: flex!important
+        flex-direction: row!important
+        flex-wrap: wrap
+        justify-content: space-around
+.sub_navbar .btn-light-empty
+    min-width: auto!important;
+    position: relative
+    top: 5px
+.sub_left .navbar-nav
+    justify-content: flex-end;
+    @media (max-width: $break-medium)
+        display: flex!important
+        flex-direction: row!important
+        flex-wrap: wrap
+        justify-content: space-around
+.sub_right .navbar-nav
+    justify-content: flex-end;
+    @media (max-width: $break-medium)
+        display: flex!important
+        flex-direction: row!important
+        flex-wrap: wrap
+        justify-content: space-around
+.sub_navbar.light a
+    color: $white!important
+.sub_navbar.light .dropdown-item
+    color: $light-dark!important

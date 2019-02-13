@@ -1,0 +1,87 @@
+$primary: #00edb5
+$secondary: #fe8e78
+$white: #ffffff
+$light-dark: #545454
+$black: #303030
+$gray: #7f7f7f
+$footer-background: #2c2956
+$button-font: Roboto, san-seriff
+$break-small: 390px
+$break-medium: 768px
+$break-large: 1200px
+
+.home-wrapper
+    background: url(../images/ads/shapes.jpg)
+    background-size: cover
+    background-attachment: fixed
+
+.home-layout .project-finder
+    padding: 30px 15px 200px 15px
+.home-layout .badge-light
+    background: transparent!important
+    color: $white!important
+.create-project img
+    width: 100%
+    height: 200px
+    object-fit: cover
+.create-project .image
+    position: relative
+.create-project .image .image-mask
+    align-items: center;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background: #80808085;
+    opacity: 0
+    transition: all ease-in-out 0.3s
+.create-project .image:hover .image-mask
+    opacity: 1
+.create-project .title
+    margin: 20px 0
+    border-bottom: solid 2px $secondary
+    width: 100px;
+.create-project p
+    font-size: 14px
+.bottom-message
+    padding: 100px 20px;
+    background: $secondary
+    margin: 140px 0 0 0
+.bottom-message .row
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    color: $white
+.bottom-message .row .title, .bottom-message .row .subtitle
+    color: white
+    margin: 20px 0
+.create-project-filter
+    display: flex;
+    margin: 20px 0
+.create-project-filter .categorie-title
+    margin: 0 15px
+.create-project-filter .categorie-title.active
+    border-bottom: solid 2px $primary
+.create-project .item
+    margin: 20px 0
+.explore-market
+    margin: 100px 0;
+.explore-market .title
+    margin: 50px 0
+.explore-market .categorie
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0
+.explore-market .first-row
+    display: flex
+    justify-content: center
+    align-items: center
+.explore-market .title h5
+    font-size: 16px!important;
+.explore-market .icon .fas
+    font-size: 35px

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Servilance - Freelancer Profile</title>
+    <title>Servilance - Account Movements</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,7 +16,7 @@
 
 </head>
 <body>
-    <div class="app-wrapper">
+    <div class="app-wrapper home-layout">
         <!-- Navbar -->
         <div class="main-app__navbar">
                 <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
@@ -261,287 +261,285 @@
                     </nav>
         </div>
         <!--End of navbar -->
-        <div class="profile freelancer">
-            <div class="profile-position-module">
+        <div class="container-fluid home-wrapper">
+            <!-- this is the inner navbar -->
+            <div class="sub_navbar sub_left light">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 rank">
-                            <h5 class="title">
-                                Posicion de mi perfil
-                            </h5>
-                            <div class="card shadow rank-card">
-                                <div class="rank-profiles">
-                                    <div class="profile active">
-                                        <img src="images/icons/HONOR-I.png" alt="Rango">
-                                        <p class="rank-name">Rango</p>
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <div id="navbarNav" >
+                            <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item  active menu-driver dropdown">
+                                <a class="nav-link  dropdown-toggle" type="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Store</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-light-empty" href="#">Pricing</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!--End of subnavbar -->
+            <div class="project-finder">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="title">Busca los mejores freelancers para tu negocio</h2>
+                                <div class="type-profile-selector">
+                                    <button class="btn btn-white active">EMPLEADOR</button>
+                                    <button class="btn btn-white freelancer-btn">FREELANCER</button>
+                                </div>
+                                <div class="project-filter">
+                                    <div class="open-projects first-item item">
+                                        <p>Abiertos</p>
                                     </div>
-                                    <div class="profile">
-                                            <img src="images/icons/HONOR-B.png" alt="Rango">
-                                            <p class="rank-name">Rango</p>
-                                        </div>
-                                    <div class="profile">
-                                        <img src="images/icons/HONOR-G.png" alt="Rango">
-                                        <p class="rank-name">Rango</p>
+                                    <div class="on-going-projects active item">
+                                        <p>Trabajos en curso</p>
                                     </div>
-                                    <div class="profile">
-                                        <img src="images/icons/HONOR-P.png" alt="Rango">
-                                        <p class="rank-name">Rango</p>
-                                    </div>
-                                    <div class="profile">
-                                        <img src="images/icons/HONOR-S.png" alt="Rango">
-                                        <p class="rank-name">Rango</p>
-                                    </div>
-                                    <div class="profile">
-                                        <img src="images/icons/copa.png" alt="Rango">
-                                        <p class="rank-name">Rango</p>
+                                    <div class="finished-projects item">
+                                        <p>Proyectos Anteriores</p>
+
                                     </div>
                                 </div>
-                                <div class="your-score">
-                                    <p><strong>Puntos acumulados: <span class="primary-text">2</span></strong></p>
-                                    <p><strong>Puntos para el proximo nivel: <span class="secondary-text">2</span></strong></p>
-                                    <hr>
-                                    <p><strong>Propuestas semanales: 2</strong></p>
-                                    <p><strong>Puntos utilzadas: <span class="primary-text">2</span></strong></p>
-                                    <p><strong>Puntos disponibles: <span class="secondary-text">2</span></strong></p>
+                                <div class="project-filter-form">
+                                    <form action="">
+                                        <div class="form-row align-items-center">
+                                            <div class="col-sm-5 my-1">
+                                              <label class="sr-only" for="inlineFormInputName"></label>
+                                              <input type="text" class="form-control" id="inlineFormInputName" placeholder="Nombre del proyecto">
+                                            </div>
+                                            <div class="col-sm-3 my-1">
+                                              <label class="sr-only" for="inlineFormInputGroupUsername">ID del proyecto</label>
+                                              <div class="input-group">
+                                                <input type="text" class="form-control project-number" id="inlineFormInputGroupUsername" placeholder="Numero del proyecto">
+                                              </div>
+                                            </div>
+                                            <div class="col-sm-2 my-1">
+                                                <label class="sr-only" for="inlineFormInputGroupUsername">Categoria</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control categorie" id="inlineFormInputGroupUsername" placeholder="Categoria">
+                                                </div>
+                                            </div>
+                                            <div class="col-auto my-1 form-button-wrapper">
+                                              <button type="submit" class="btn btn-primary filter-form-button"><i class="fas fa-search"></i></button>
+                                            </div>
+                                          </div>
+                                    </form>
+                                    <div class="the-perks">
+                                        <span class="badge badge-light enabled" id="perk-1">Diseno web <span class="close-perk" data-id="perk-1"><i class="fas fa-times"></i></span></span>
+                                        <span class="badge badge-light enabled" id="perk-2">Html <span class="close-perk" data-id="perk-2"><i class="fas fa-times"></i></span></span>
+                                        <span class="badge badge-light enabled" id="perk-3">Css <span class="close-perk" data-id="perk-3"><i class="fas fa-times"></i></span></span>
+                                        <span class="badge badge-light enabled" id="perk-4">React <span class="close-perk" data-id="perk-4"><i class="fas fa-times"></i></span></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-8 info">
-                            <h5>Como mejorar tu perfil</h5>
-                            <div class="card shadow info-card">
-                                <div class="steps-improve-position">
-                                    <p class="its-done"><strong>Confirmar direccion de email</strong><a href="#"><span class="icon-primary"><i class="fas fa-question-circle"></i></span></a></p>
-                                    <p class="its-done"><strong>Confirmar direccion de email</strong><a href="#"><span class="icon-primary"><i class="fas fa-question-circle"></i></span></a></p>
-                                    <p ><strong>Confirmar direccion de email</strong><a href="#"><span class="icon-primary"><i class="fas fa-question-circle"></i></span></a></p>
-                                    <p ><strong>Confirmar direccion de email</strong><a href="#"><span class="icon-primary"><i class="fas fa-question-circle"></i></span></a></p>
-                                    <p class="its-done"><strong>Confirmar direccion de email</strong><a href="#"><span class="icon-primary"><i class="fas fa-question-circle"></i></span></a></p>
-                                    <p ><strong>Confirmar direccion de email</strong><a href="#"><span class="icon-primary"><i class="fas fa-question-circle"></i></span></a></p>
+                    </div>
+            </div>
+        </div>
+        <div class="explore-market">
+            <div class="container">
+                <h5 class="title">Explora el mercado</h5>
+                <div class="row first-row categories">
+                            <div class="col-lg-3 categorie">
+                                <div class="icon icon-primary">
+                                    <i class="fas fa-american-sign-language-interpreting"></i>
+                                </div>
+                                <div class="title">
+                                    <h5>Nombre de la categoria</h5>
                                 </div>
                             </div>
-                        </div>
+                            <div class="col-lg-3 categorie">
+                                <div class="icon icon-primary">
+                                    <i class="fas fa-american-sign-language-interpreting"></i>
+                                </div>
+                                <div class="title">
+                                    <h5>Nombre de la categoria</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 categorie">
+                                <div class="icon icon-primary">
+                                    <i class="fas fa-american-sign-language-interpreting"></i>
+                                </div>
+                                <div class="title">
+                                    <h5>Nombre de la categoria</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 categorie">
+                                <div class="icon icon-primary">
+                                    <i class="fas fa-american-sign-language-interpreting"></i>
+                                </div>
+                                <div class="title">
+                                    <h5>Nombre de la categoria</h5>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-3 categorie">
+                                <div class="icon icon-primary">
+                                    <i class="fas fa-american-sign-language-interpreting"></i>
+                                </div>
+                                <div class="title">
+                                    <h5>Nombre de la categoria</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 categorie">
+                                <div class="icon icon-primary">
+                                    <i class="fas fa-american-sign-language-interpreting"></i>
+                                </div>
+                                <div class="title">
+                                    <h5>Nombre de la categoria</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 categorie">
+                                <div class="icon icon-primary">
+                                    <i class="fas fa-american-sign-language-interpreting"></i>
+                                </div>
+                                <div class="title">
+                                    <h5>Nombre de la categoria</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 categorie">
+                                <div class="icon icon-primary">
+                                    <i class="fas fa-american-sign-language-interpreting"></i>
+                                </div>
+                                <div class="title">
+                                    <h5>Nombre de la categoria</h5>
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="create-project">
+            <div class="container">
+                <div class="row">
+                    <div class="create-project-filter">
+                        <a href=""><p class="categorie-title active"><strong>Diseno</strong></p></a>
+                        <a href=""><p class="categorie-title"><strong>Diseno</strong></p></a>
+                        <a href=""><p class="categorie-title"><strong>Diseno</strong></p></a>
+                        <a href=""><p class="categorie-title"><strong>Diseno</strong></p></a>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
-                        <div class="profile-data">
-                            <div class="user-info shadow">
-                                <div class="user-avatar">
-                                    <img src="images/ads/street.jpg" alt="">
-                                </div>
-                                <div class="user-name">
-                                    <h5>Isaura Teixeira</h5>
-                                </div>
-                                <div class="complementary-info">
-                                    <div class="user-rank">
-                                            <i class="fas fa-star full"></i>
-                                            <i class="fas fa-star full"></i>
-                                            <i class="fas fa-star full"></i>
-                                            <i class="fas fa-star full"></i>
-                                            <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="user-stats">
-                                        <p><strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, laborum recusandae fugiat delectus dignissimos, distinctio quasi rem enim asperiores aut magni ipsam! Dignissimos veniam velit saepe dolor, aliquam enim placeat?</strong></p>
-                                    </div>
-                                </div>
-                                <hr>
+                    <div class="col-lg-4 item">
+                        <div class="image">
+                            <img src="images/ads/colors.jpg" alt="">
+                            <div class="image-mask">
+                                <a href="" class="btn btn-primary">Crear Proyecto</a>
                             </div>
-                            <div class="user-especialization shadow">
-                                <h5 class="title">Especializacion</h5>
-                                <div class="especialization-info">
-                                    <p><strong>Carrera</strong></p>
-                                    <p><small>Ing. Informatica</small></p>
-                                    <hr>
-                                    <p><strong>Costo por hora</strong></p>
-                                    <p><small>$70 / hr</small></p>
+                        </div>
+                        <div class="title">
+                            <h5>Categoria</h5>
+                        </div>
+                        <div class="information">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, omnis, nisi consequuntur est perspiciatis repudiandae sint rem eveniet, numquam sed totam atque deserunt consequatur! At accusamus eaque minima dignissimos optio.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 item">
+                        <div class="image">
+                            <img src="images/ads/colors.jpg" alt="">
+                            <div class="image-mask">
+                                <a href="" class="btn btn-primary">Crear Proyecto</a>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h5>Categoria</h5>
+                        </div>
+                        <div class="information">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, omnis, nisi consequuntur est perspiciatis repudiandae sint rem eveniet, numquam sed totam atque deserunt consequatur! At accusamus eaque minima dignissimos optio.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 item">
+                        <div class="image">
+                            <img src="images/ads/colors.jpg" alt="">
+                            <div class="image-mask">
+                                <a href="" class="btn btn-primary">Crear Proyecto</a>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h5>Categoria</h5>
+                        </div>
+                        <div class="information">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, omnis, nisi consequuntur est perspiciatis repudiandae sint rem eveniet, numquam sed totam atque deserunt consequatur! At accusamus eaque minima dignissimos optio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-lg-4 item">
+                            <div class="image">
+                                <img src="images/ads/colors.jpg" alt="">
+                                <div class="image-mask">
+                                    <a href="" class="btn btn-primary">Crear Proyecto</a>
                                 </div>
-                                <div class="action">
-                                    <a href="" class="btn btn-primary">CONTRATAR</a>
+                            </div>
+                            <div class="title">
+                                <h5>Categoria</h5>
+                            </div>
+                            <div class="information">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, omnis, nisi consequuntur est perspiciatis repudiandae sint rem eveniet, numquam sed totam atque deserunt consequatur! At accusamus eaque minima dignissimos optio.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 item">
+                            <div class="image">
+                                <img src="images/ads/colors.jpg" alt="">
+                                <div class="image-mask">
+                                    <a href="" class="btn btn-primary">Crear Proyecto</a>
                                 </div>
+                            </div>
+                            <div class="title">
+                                <h5>Categoria</h5>
+                            </div>
+                            <div class="information">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, omnis, nisi consequuntur est perspiciatis repudiandae sint rem eveniet, numquam sed totam atque deserunt consequatur! At accusamus eaque minima dignissimos optio.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 item">
+                            <div class="image">
+                                <img src="images/ads/colors.jpg" alt="">
+                                <div class="image-mask">
+                                    <a href="" class="btn btn-primary">Crear Proyecto</a>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <h5>Categoria</h5>
+                            </div>
+                            <div class="information">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, omnis, nisi consequuntur est perspiciatis repudiandae sint rem eveniet, numquam sed totam atque deserunt consequatur! At accusamus eaque minima dignissimos optio.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8">
-                        <div class="profile-cards first-card">
-                            <div class="title">
-                                <h5>Mi titulo</h5>
-                            </div>
-                            <div class="card shadow">
-                                <div class="the-conter">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit earum molestias sunt vero repudiandae eaque numquam amet quisquam pariatur deleniti, assumenda nihil! Praesentium necessitatibus cupiditate, nisi iusto porro corporis voluptatem.</p>
-                                </div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="profile-cards">
-                            <div class="title">
-                                <h5>Mi titulo</h5>
-                            </div>
-                            <div class="card shadow">
-                                <div class="subtitle">
-                                    <h5>Mi subtitulo</h5>
-                                </div>
-                                <div class="the-conter">
-                                    <ul>
-                                        <li>
-                                            <p>Experiencia en desarrollo web</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr>
-                                <div class="profile-card-form disabled" id="content-1">
-                                    <form action="">
-                                        <div class="form-group">
-                                            <input type="text" name="" id="" placeholder="Agrega el contenido" class="form-control">
-                                            <button type="submit" class="btn btn-secondary ">+ Agregar</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="profile-card-button">
-                                    <button class="btn btn-primary btn-add" data-id="content-1">+ Contenido</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="perks">
-                            <div class="title">
-                                <h5>Habilidades</h5>
-                            </div>
-                            <div class="the-perks">
-                                <span class="badge badge-light enabled" id="perk-1">Diseno web <span class="close-perk" data-id="perk-1"><i class="fas fa-times"></i></span></span>
-                                <span class="badge badge-light enabled" id="perk-2">Html <span class="close-perk" data-id="perk-2"><i class="fas fa-times"></i></span></span>
-                                <span class="badge badge-light enabled" id="perk-3">Css <span class="close-perk" data-id="perk-3"><i class="fas fa-times"></i></span></span>
-                                <span class="badge badge-light enabled" id="perk-4">React <span class="close-perk" data-id="perk-4"><i class="fas fa-times"></i></span></span>
-                                <div class="profile-card-form disabled" id="content-9">
-                                    <form action="">
-                                        <div class="form-group">
-                                            <input type="text" name="" id="" placeholder="Agrega el contenido" class="form-control">
-                                            <button type="submit" class="btn btn-secondary ">+ Agregar</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="profile-card-button">
-                                    <button class="btn btn-primary btn-add" data-id="content-9">+ Agregar</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio">
-                            <div class="title">
-                                <h5>Portafolio</h5>
-                            </div>
-                            <div class="portfolio-thumbnails row">
-                                <div class="the-portfolio-item col-md-6 col-lg-4">
-                                    <a href="#"><img src="images/ads/shapes.jpg" alt=""></a>
-                                </div>
-                                <div class="the-portfolio-item col-md-6 col-lg-4">
-                                        <a href="#"><img src="images/ads/shapes.jpg" alt=""></a>
-                                </div>
-                                <div class="the-portfolio-item col-md-6 col-lg-4">
-                                        <a href="#"><img src="images/ads/shapes.jpg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="profile-card-form disabled" id="content-10">
-                                <form action="">
-                                    <div class="form-group">
-                                        <input type="text" name="" id="" placeholder="Agrega el contenido" class="form-control">
-                                        <button type="submit" class="btn btn-secondary ">+ Agregar</button>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="profile-card-button">
-                                <button class="btn btn-primary btn-add" data-id="content-10">+ Agregar</button>
-                            </div>
-                        </div>
-                        <div class="profile-progress row">
-                            <div class="finished-jobs col-md-6 col-lg-4">
-                                <h6>Finished Jobs</h6>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%;    background-color: #00edb5 !important;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                                </div>
-                            </div>
-                            <div class="finished-jobs col-md-6 col-lg-4">
-                                <h6>Finished Jobs</h6>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%;    background-color: #00edb5 !important;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                                </div>
-                            </div>
-                            <div class="finished-jobs col-md-6 col-lg-4">
-                                <h6>Finished Jobs</h6>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%;    background-color: #00edb5 !important;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                                </div>
-                            </div>
-                        </div>
-
+            </div>
+        </div>
+        <div class="bottom-message">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title">Titulo</h2>
+                    <p class="subtitle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores aut deleniti omnis dolor at eum tempore  dicta repudiandae, hic, nisi fugit optio neque molestiae, quo distinctio corporis. Nostrum, asperiores.
+                    </p>
+                    <div class="button">
+                        <a href="" class="btn btn-light-empty-white">Mirar ahora</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer-module">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <h5 class="title">Titulo columna</h5>
-                    <ul class="footer-list">
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h5 class="title">Titulo columna</h5>
-                    <ul class="footer-list">
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h5 class="title">Titulo columna</h5>
-                    <ul class="footer-list">
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h5 class="title">Titulo columna</h5>
-                    <ul class="footer-list">
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                            <li><a href=""><p class="footer-item">Item 1</p></a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form>
-                    <div class="form-row align-items-center">
-                        <div class="col-auto">
-                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                        <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-globe"></i></div>
-                            </div>
-                            <select id="inputState" class="form-control">
-                                <option selected>Ingles</option>
-                                <option>Aleman</option>
-                                <option>Espanol</option>
-                            </select>
-                        </div>
-                        </div>
-                    </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="js/functions.js"></script>
 </body>
 </html>

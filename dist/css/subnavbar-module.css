@@ -1,0 +1,45 @@
+.sub_navbar .navbar {
+  background-color: transparent !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 20px 0; }
+
+.sub_navbar #navbarNav {
+  width: 100% !important; }
+
+@media (max-width: 768px) {
+  .sub_navbar .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: space-around; } }
+
+.sub_navbar .btn-light-empty {
+  min-width: auto !important;
+  position: relative;
+  top: 5px; }
+
+.sub_left .navbar-nav {
+  justify-content: flex-end; }
+  @media (max-width: 768px) {
+    .sub_left .navbar-nav {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      justify-content: space-around; } }
+
+.sub_right .navbar-nav {
+  justify-content: flex-end; }
+  @media (max-width: 768px) {
+    .sub_right .navbar-nav {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      justify-content: space-around; } }
+
+.sub_navbar.light a {
+  color: #ffffff !important; }
+
+.sub_navbar.light .dropdown-item {
+  color: #545454 !important; }
