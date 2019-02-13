@@ -1,0 +1,122 @@
+$primary: #00edb5
+$secondary: #fe8e78
+$white: #ffffff
+$light-dark: #545454
+$black: #303030
+$gray: #7f7f7f
+$footer-background: #2c2956
+$button-font: Roboto, san-seriff
+$break-small: 390px
+$break-medium: 768px
+$break-large: 1200px
+
+.search-project-wrapper
+    background: url(../images/ads/colors.jpg)
+    background-size: cover
+    background-attachment: fixed
+.search-project-layout .project-finder
+    padding: 0px 15px 50px 15px;
+.search-project-layout .badge-light
+    background: $primary!important
+    color: $white!important
+.project-creator-bottom-info img
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+.the-filters .fa-star
+    font-size: 15px
+    color: $white
+.the-filters .fa-star.full
+    color: $primary
+.search-project-filter .top-title
+    background: $primary
+    color: $light-dark
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 0;
+    border: none;
+    margin: 0 0 20px 0;
+.search-project-filter .top-title h5
+    margin: 0
+.search-project-filter .the-filters
+    padding: 30px;
+    margin-bottom: 20px
+.search-project-filter option
+    border: solid 1px #e6e6e6!important;
+    padding: 10px!important;
+    width: auto!important;
+    border-radius: 3px!important;
+    min-width: auto!important;
+    margin: 10px
+.search-project-filter .the-filters .button-selector
+    display: flex;
+    width: 100%;
+    justify-content: space-around
+.btn-selection
+    width: 32%;
+    min-width: 32%!important;
+.custom-multiple::-webkit-scrollbar
+    display: none
+.search-project-filter .form-group
+    margin: 30px 0px 50px 0;
+.search-project-results .top-message
+    margin: 20px 0;
+    padding: 20px;
+.search-project-results .top-message p
+    margin: 0
+    font-weight: bold
+.search-project-results .the-result
+    padding: 30px 20px;
+    margin: 30px 0
+.search-project-results .the-result.highlighted
+    background: #00ecb56e;
+    border: solid 2px #00ecb56e
+.search-project-results .the-result .info-top .fa-star
+    display: none
+.search-project-results .the-result.highlighted .info-top .fa-star
+    display: inline;
+    color: #ffc107;
+.search-project-results .the-result .info-top
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+.search-project-results .the-result .user-name-rank .user-rank
+    position: relative;
+    left: 8px;
+
+.search-project-results .the-result .info-part-one
+    margin: 20px 0;
+.search-project-results .project-creator-bottom-info
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    @media (max-width: $break-small)
+        flex-direction: column
+.search-project-results .project-creator-bottom-info .user-info
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: $break-small)
+        justify-content: flex-start
+.search-project-results .project-creator-bottom-info .user-country
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    flex-wrap: wrap
+    @media (max-width: $break-small)
+        margin: 10px 0px;
+        justify-content: flex-start
+.search-project-results .project-creator-bottom-info .user-name p, .search-project-results .project-creator-bottom-info .country-name p
+    margin: 0;
+    margin-left: 10px;
+.search-project-controllers .pagination
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+.search-project-controllers .pagination .btn-navigation
+    margin: 0 4px

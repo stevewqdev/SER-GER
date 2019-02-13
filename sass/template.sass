@@ -8,11 +8,14 @@ $white: #ffffff
 $light-dark: #545454
 $black: #303030
 $gray: #7f7f7f
+$light-gray: #cecece
 $footer-background: #2c2956
 $button-font: Roboto, san-seriff
 $break-small: 390px
 $break-medium: 768px
 $break-large: 1200px
+
+
 body
     background-color: #f9f9f9!important
 //Antenna font for the titles
@@ -89,13 +92,13 @@ p, li, span
     color: $white!important
 .app-wrapper
     background: #f9f9f9
-    min-height: 100vh;
+    min-height: 100vh
 .bg-success
     background-color: $primary!important
     border-color: $primary!important
 .badge-light
-    color: #212529;
-    border: solid 1px $primary;
+    color: #212529
+    border: solid 1px $primary
 .primary-text
     color: $primary
 .secondary-text
@@ -110,6 +113,11 @@ p, li, span
     border: solid 1px $light-dark!important
     background: transparent!important
     color: $light-dark!important
+.btn-light-empty.active
+    border-color: $primary!important
+.btn-light-empty.active:hover
+    border-color: $primary!important
+    background: $primary!important
 .btn-light-empty:hover
     border: solid 1px $light-dark!important
     background: $light-dark!important
@@ -126,6 +134,37 @@ p, li, span
     border-left: solid 10px $primary!important
 .secondary-card-border
     border-left: solid 10px $secondary!important
+.btn-navigation
+    background: $light-gray!important
+    border-radius: 4px
+    transition: all ease-in-out 0.4s
+    font-size: 17px
+    min-width: auto!important
+    width: auto!important
+    margin: 4px
+.btn-navigation:hover
+    background: $primary!important
+    color: $white!important
+    border-radius: 4px
+// Ad spaces
+.ad-space
+    margin: 50px 0
+.ad-space img
+    width: 100%
+    height: 250px
+    object-fit: cover
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link
+    color: $light-dark!important
+    background-color: transparent!important
+    border-bottom: solid 2px $primary
+    font-weight: bold
+    border-radius: 0
+.nav-pills .nav-link
+    color: $light-dark!important
+.nav-pills .nav-item
+    padding: 0
+    margin: 0
+
 // NAVBAR CODE IMPORT
 @import 'navbar-module'
 @import 'subnavbar-module'
@@ -148,5 +187,13 @@ p, li, span
 @import 'profile-position'
 // Profile module for position and info
 @import 'account-movements'
+// Profile module for position and info
+@import 'search-project-module'
+// Social buttons custom
+@import 'social-buttons'
+// Post Work
+@import 'post-offer'
+// Post Search Freelancer
+@import 'search-freelancer-module'
 // Footer
 @import 'footer-module'

@@ -11,6 +11,12 @@ $('.project-filter .item').click(function(){
         $(this).addClass('active');
     }
 })
+$('.btn-selection').click(function(){
+    if(!$(this).hasClass('active')){
+        $('.btn-selection').removeClass('active');
+        $(this).addClass('active');
+    }
+})
 //Functions for Profile
 $('.btn-add').click(function(){
     var attrId = $(this).attr('data-id');

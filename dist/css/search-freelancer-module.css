@@ -1,0 +1,46 @@
+.the-freelancer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px; }
+
+.top-freelancers {
+  margin: 130px 0 0 0; }
+
+.top-freelancers .row {
+  justify-content: space-between; }
+
+.the-freelancer-top {
+  margin: 20px 15px; }
+
+.top-freelancers .avatar img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  margin: 20px 0; }
+
+.top-freelancers .ranking-position img {
+  height: 40px; }
+
+.top-freelancers .country {
+  display: flex;
+  margin: 20px 0; }
+
+.top-freelancers .country img {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  margin-left: 15px; }
+
+.top-freelancers .hour-rate {
+  text-align: center; }
+
+.top-freelancers .user-rank {
+  margin: 20px 0 0 0; }
+
+.top-freelancers .ranking-position {
+  margin: 10px 0 0 0; }

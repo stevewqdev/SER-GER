@@ -44,8 +44,7 @@
 
 .bottom-message {
   padding: 100px 20px;
-  background: #fe8e78;
-  margin: 140px 0 0 0; }
+  background: #00edb5; }
 
 .bottom-message .row {
   display: flex;
@@ -94,3 +93,51 @@
 
 .explore-market .icon .fas {
   font-size: 35px; }
+
+.invite-friend {
+  margin: 80px 0 0 0;
+  padding: 120px 15px;
+  background: url(../images/ads/street.jpg); }
+
+.invite-friend .title {
+  text-align: center;
+  color: white; }
+
+.invite-friend input {
+  width: 100% !important;
+  height: 50px !important; }
+
+.invite-friend button {
+  margin: 0;
+  padding: 14px;
+  margin-bottom: 0 !important; }
+  @media (max-width: 768px) {
+    .invite-friend button {
+      margin: 10px 0;
+      width: 100%; } }
+
+.invite-friend-form .form-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0; }
+
+.share-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0; }
+
+.how-it-works {
+  padding: 100px 0; }
+
+.how-it-works .the-title {
+  margin-bottom: 50px; }
+
+.how-it-works .fas {
+  font-size: 50px;
+  margin: 20px 0;
+  color: #00edb5; }
+
+.how-it-works .the-step {
+  margin: 20px 0; }

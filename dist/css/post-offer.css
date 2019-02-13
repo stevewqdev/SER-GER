@@ -1,0 +1,77 @@
+.ad-vertical-space img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.offer-content .offer-content-inner {
+  padding: 20px 15px; }
+
+.offer-content .sub-inner-fields {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.offer-content .sub-inner-fields .col-lg-6 {
+  padding: 0; }
+
+.offer-content .job-info {
+  border-left: solid 5px #00edb5;
+  margin: 30px 0;
+  padding: 15px; }
+
+.the-freelancer .avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.the-freelancer .avatar {
+  padding: 0 !important;
+  max-height: 330px; }
+
+.the-freelancer .info {
+  padding: 20px 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly; }
+
+.freelancer-send-offer {
+  margin: 50px 0; }
+
+.the-freelancer {
+  margin: 30px 0; }
+
+.the-freelancer .name p {
+  margin: 0; }
+
+.the-freelancer .bottom {
+  margin: 20px 0; }
+
+.the-freelancer .bottom button, .offer-content-inner .button button {
+  margin: 10px 0; }
+
+.the-freelancer .user-country {
+  display: flex; }
+
+.the-freelancer .top {
+  display: flex;
+  justify-content: space-evenly; }
+
+.the-freelancer .top .personal-info {
+  width: calc(100% / 3);
+  position: relative;
+  bottom: -16px; }
+
+.the-freelancer .user-country img {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 4px; }
+
+.the-freelancer .top .personal-info.hour-rate {
+  border-bottom: solid 3px #00edb5; }

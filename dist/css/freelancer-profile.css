@@ -80,3 +80,16 @@
 
 .profile-card-button {
   margin: 20px 0; }
+
+.notifications .the-notification {
+  position: relative;
+  margin: 20px 0; }
+
+.notifications .the-notification p {
+  margin: 0; }
+
+.main-tab .add-new-project .card {
+  padding: 40px 0; }
+
+.main-tab .add-new-project .card a {
+  color: #545454 !important; }

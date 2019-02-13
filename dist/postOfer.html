@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Servilance - Home</title>
+    <title>Servilance - Search Projects</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,7 +16,7 @@
 
 </head>
 <body>
-    <div class="app-wrapper home-layout">
+    <div class="app-wrapper post-offer-layout   ">
         <!-- Navbar -->
         <div class="main-app__navbar">
                 <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
@@ -260,338 +260,328 @@
                         </div>
                     </nav>
         </div>
-        <!--End of navbar -->
-        <div class="container-fluid home-wrapper">
-            <!-- this is the inner navbar -->
-            <div class="sub_navbar sub_left light">
-                <div class="container">
-                    <nav class="navbar navbar-expand-lg navbar-light ">
-                        <div id="navbarNav" >
-                            <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item  active menu-driver dropdown">
-                                <a class="nav-link  dropdown-toggle" type="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Store</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="post-offer-wrapper">
+            <div class="container search-project-results">
+                <div class="row">
+                    <div class="results col-lg-12">
+                        <div class="the-result card shadow ">
+                            <div class="info-top">
+                                <h4 class="title"><i class="fas fa-star full"></i> Titulo del proyecto</h4>
+                            </div>
+                            <div class="info-part-one">
+                                <p><strong>Publicado: </strong>hace 12 horas</p>
+                                <p><strong>Propuestas Recibidas: </strong>10</p>
+                            </div>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium id similique corrupti ipsa molestiae commodi voluptatem asperiores? Tempore culpa, aspernatur similique quasi adipisci facere repellat esse totam, earum, quibusdam dolore?
+                            </p>
+                            <div class="tags">
+                                <div class="the-perks">
+                                        <span class="badge badge-light enabled" id="perk-11">Diseno web <span class="close-perk" data-id="perk-11"><i class="fas fa-times"></i></span></span>
+                                        <span class="badge badge-light enabled" id="perk-12">Html <span class="close-perk" data-id="perk-12"><i class="fas fa-times"></i></span></span>
+                                        <span class="badge badge-light enabled" id="perk-13">Css <span class="close-perk" data-id="perk-13"><i class="fas fa-times"></i></span></span>
+                                        <span class="badge badge-light enabled" id="perk-14">React <span class="close-perk" data-id="perk-14"><i class="fas fa-times"></i></span></span>
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn btn-light-empty" href="#">Pricing</a>
-                            </li>
-                            </ul>
+                                <hr>
+                            </div>
+                            <div class="project-creator-info">
+                                <p><strong>EMPLEADOR</strong></p>
+                            </div>
+                            <div class="project-creator-bottom-info">
+                                <div class="user-info">
+                                    <div class="user-avatar">
+                                        <img src="images/ads/street.jpg" alt="">
+                                    </div>
+                                    <div class="user-name-rank">
+                                        <div class="user-name">
+                                            <p>Alicia Teixeira</p>
+                                        </div>
+                                        <div class="user-rank the-filters">
+                                            <i class="fas fa-star full"></i>
+                                            <i class="fas fa-star full"></i>
+                                            <i class="fas fa-star full"></i>
+                                            <i class="fas fa-star full"></i>
+                                            <i class="fas fa-star full"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-country">
+                                    <div class="country-image">
+                                        <img src="images/1200px-Flag_of_Mexico.svg.png" alt="">
+                                    </div>
+                                    <div class="country-name">
+                                        <p>Mexico</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </nav>
+                    </div>
                 </div>
             </div>
-            <!--End of subnavbar -->
-            <div class="project-finder">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h2 class="title">Busca los mejores freelancers para tu negocio</h2>
-                                <div class="type-profile-selector">
-                                    <button class="btn btn-white active">EMPLEADOR</button>
-                                    <button class="btn btn-white freelancer-btn">FREELANCER</button>
+            <div class="container offer-content">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-9">
+                        <div class="offer-content-inner shadow card">
+                            <form action="">
+                                <div class="form-group">
+                                    <p><strong>Propuesta</strong></p>
+                                    <label for="exampleFormControlTextarea1">Escribe la propuesta para el cliente</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
-                                <div class="project-filter">
-                                    <div class="open-projects first-item item">
-                                        <p>Abiertos</p>
-                                    </div>
-                                    <div class="on-going-projects active item">
-                                        <p>Trabajos en curso</p>
-                                    </div>
-                                    <div class="finished-projects item">
-                                        <p>Proyectos Anteriores</p>
-
-                                    </div>
-                                </div>
-                                <div class="project-filter-form">
-                                    <form action="">
-                                        <div class="form-row align-items-center">
-                                            <div class="col-sm-5 my-1">
-                                              <label class="sr-only" for="inlineFormInputName"></label>
-                                              <input type="text" class="form-control" id="inlineFormInputName" placeholder="Nombre del proyecto">
-                                            </div>
-                                            <div class="col-sm-3 my-1">
-                                              <label class="sr-only" for="inlineFormInputGroupUsername">ID del proyecto</label>
-                                              <div class="input-group">
-                                                <input type="text" class="form-control project-number" id="inlineFormInputGroupUsername" placeholder="Numero del proyecto">
-                                              </div>
-                                            </div>
-                                            <div class="col-sm-2 my-1">
-                                                <label class="sr-only" for="inlineFormInputGroupUsername">Categoria</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control categorie" id="inlineFormInputGroupUsername" placeholder="Categoria">
+                                <div class="sub-inner-fields">
+                                    <div class="col-sm-12 col-lg-5">
+                                        <div class="form-group">
+                                                <p><strong>Monto de la propuesta</strong></p>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                <span class="input-group-text" id="inputGroupPrepend2">USD</span>
                                                 </div>
+                                                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Monto" aria-describedby="inputGroupPrepend2" required>
                                             </div>
-                                            <div class="col-auto my-1 form-button-wrapper">
-                                              <button type="submit" class="btn btn-primary filter-form-button"><i class="fas fa-search"></i></button>
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Vas a recibir</strong></p>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                <span class="input-group-text" id="inputGroupPrepend2">USD</span>
+                                                </div>
+                                                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Vas a recibir" aria-describedby="inputGroupPrepend2" required>
                                             </div>
-                                          </div>
-                                    </form>
-                                    <div class="the-perks">
-                                        <span class="badge badge-light enabled" id="perk-1">Diseno web <span class="close-perk" data-id="perk-1"><i class="fas fa-times"></i></span></span>
-                                        <span class="badge badge-light enabled" id="perk-2">Html <span class="close-perk" data-id="perk-2"><i class="fas fa-times"></i></span></span>
-                                        <span class="badge badge-light enabled" id="perk-3">Css <span class="close-perk" data-id="perk-3"><i class="fas fa-times"></i></span></span>
-                                        <span class="badge badge-light enabled" id="perk-4">React <span class="close-perk" data-id="perk-4"><i class="fas fa-times"></i></span></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Horas para tener listo el trabajo</strong></p>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                <span class="input-group-text" id="inputGroupPrepend2">Cantidad hr</span>
+                                                </div>
+                                                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Numero de horas" aria-describedby="inputGroupPrepend2" required>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-        <div class="explore-market">
-            <div class="container">
-                <h5 class="title">Explora el mercado</h5>
-                <div class="row first-row categories">
-                            <div class="col-lg-3 categorie">
-                                <div class="icon icon-primary">
-                                    <i class="fas fa-american-sign-language-interpreting"></i>
-                                </div>
-                                <div class="title">
-                                    <h5>Nombre de la categoria</h5>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 categorie">
-                                <div class="icon icon-primary">
-                                    <i class="fas fa-american-sign-language-interpreting"></i>
-                                </div>
-                                <div class="title">
-                                    <h5>Nombre de la categoria</h5>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 categorie">
-                                <div class="icon icon-primary">
-                                    <i class="fas fa-american-sign-language-interpreting"></i>
-                                </div>
-                                <div class="title">
-                                    <h5>Nombre de la categoria</h5>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 categorie">
-                                <div class="icon icon-primary">
-                                    <i class="fas fa-american-sign-language-interpreting"></i>
-                                </div>
-                                <div class="title">
-                                    <h5>Nombre de la categoria</h5>
-                                </div>
-                            </div>
+                                    <div class="col-sm-12 col-lg-5">
+                                        <div class="job-info">
+                                            <p><strong>6</strong></p>
+                                            <p><strong>Ofertas</strong></p>
+                                        </div>
+                                        <div class="job-info">
+                                            <p><strong>$18/hr</strong></p>
+                                            <p><strong>Oferta Promedio</strong></p>
+                                        </div>
+                                        <div class="job-info">
+                                            <p><strong>$600/hr</strong></p>
+                                            <p><strong>Presupuesto</strong></p>
+                                        </div>
+                                    </div>
 
-
-                            <div class="col-lg-3 categorie">
-                                <div class="icon icon-primary">
-                                    <i class="fas fa-american-sign-language-interpreting"></i>
                                 </div>
-                                <div class="title">
-                                    <h5>Nombre de la categoria</h5>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 categorie">
-                                <div class="icon icon-primary">
-                                    <i class="fas fa-american-sign-language-interpreting"></i>
-                                </div>
-                                <div class="title">
-                                    <h5>Nombre de la categoria</h5>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 categorie">
-                                <div class="icon icon-primary">
-                                    <i class="fas fa-american-sign-language-interpreting"></i>
-                                </div>
-                                <div class="title">
-                                    <h5>Nombre de la categoria</h5>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 categorie">
-                                <div class="icon icon-primary">
-                                    <i class="fas fa-american-sign-language-interpreting"></i>
-                                </div>
-                                <div class="title">
-                                    <h5>Nombre de la categoria</h5>
-                                </div>
-                            </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="create-project">
-            <div class="container">
-                <div class="row">
-                    <div class="create-project-filter">
-                        <a href=""><p class="categorie-title active"><strong>Diseno</strong></p></a>
-                        <a href=""><p class="categorie-title"><strong>Diseno</strong></p></a>
-                        <a href=""><p class="categorie-title"><strong>Diseno</strong></p></a>
-                        <a href=""><p class="categorie-title"><strong>Diseno</strong></p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 item">
-                        <div class="image">
-                            <img src="images/ads/colors.jpg" alt="">
-                            <div class="image-mask">
-                                <a href="" class="btn btn-primary">Crear Proyecto</a>
-                            </div>
-                        </div>
-                        <div class="title">
-                            <h5>Categoria</h5>
-                        </div>
-                        <div class="information">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, omnis, nisi consequuntur est perspiciatis repudiandae sint rem eveniet, numquam sed totam atque deserunt consequatur! At accusamus eaque minima dignissimos optio.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 item">
-                        <div class="image">
-                            <img src="images/ads/colors.jpg" alt="">
-                            <div class="image-mask">
-                                <a href="" class="btn btn-primary">Crear Proyecto</a>
-                            </div>
-                        </div>
-                        <div class="title">
-                            <h5>Categoria</h5>
-                        </div>
-                        <div class="information">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, omnis, nisi consequuntur est perspiciatis repudiandae sint rem eveniet, numquam sed totam atque deserunt consequatur! At accusamus eaque minima dignissimos optio.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 item">
-                        <div class="image">
-                            <img src="images/ads/colors.jpg" alt="">
-                            <div class="image-mask">
-                                <a href="" class="btn btn-primary">Crear Proyecto</a>
-                            </div>
-                        </div>
-                        <div class="title">
-                            <h5>Categoria</h5>
-                        </div>
-                        <div class="information">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, omnis, nisi consequuntur est perspiciatis repudiandae sint rem eveniet, numquam sed totam atque deserunt consequatur! At accusamus eaque minima dignissimos optio.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                        <div class="col-lg-4 item">
-                            <div class="image">
-                                <img src="images/ads/colors.jpg" alt="">
-                                <div class="image-mask">
-                                    <a href="" class="btn btn-primary">Crear Proyecto</a>
-                                </div>
-                            </div>
-                            <div class="title">
-                                <h5>Categoria</h5>
-                            </div>
-                            <div class="information">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, omnis, nisi consequuntur est perspiciatis repudiandae sint rem eveniet, numquam sed totam atque deserunt consequatur! At accusamus eaque minima dignissimos optio.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 item">
-                            <div class="image">
-                                <img src="images/ads/colors.jpg" alt="">
-                                <div class="image-mask">
-                                    <a href="" class="btn btn-primary">Crear Proyecto</a>
-                                </div>
-                            </div>
-                            <div class="title">
-                                <h5>Categoria</h5>
-                            </div>
-                            <div class="information">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, omnis, nisi consequuntur est perspiciatis repudiandae sint rem eveniet, numquam sed totam atque deserunt consequatur! At accusamus eaque minima dignissimos optio.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 item">
-                            <div class="image">
-                                <img src="images/ads/colors.jpg" alt="">
-                                <div class="image-mask">
-                                    <a href="" class="btn btn-primary">Crear Proyecto</a>
-                                </div>
-                            </div>
-                            <div class="title">
-                                <h5>Categoria</h5>
-                            </div>
-                            <div class="information">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, omnis, nisi consequuntur est perspiciatis repudiandae sint rem eveniet, numquam sed totam atque deserunt consequatur! At accusamus eaque minima dignissimos optio.</p>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-        <div class="invite-friend">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4 class="title">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dolores.
-                        </h4>
-                        <div class="invite-friend-form">
-                            <form class="form-inline">
-                                <div class="form-group col-sm-12 col-lg-6">
-                                    <input type="text" class="form-control" id="inputPassword2" placeholder="Invitar amigo">
-                                </div>
-                                <div class="col-sm-12 col-lg-3">
-                                    <button type="submit" class="btn btn-primary mb-2">ENVIAR INVITACION</button>
+                                <div class="button">
+                                    <button class="btn btn-primary">Ofertar</button>
+                                    <button class="btn btn-light-empty">Enviar mensaje <span class="icon-secondary"><i class="fas fa-comment-alt"></i></span></button>
                                 </div>
                             </form>
                         </div>
-                        <h4 class="title">
-                            O comparte el siguiente enlace con tus amigos
-                        </h4>
-                        <div class="custom-refer-link">
-                            <h6 class="title">bitly.com/kjkikj324235</h6>
+                    </div>
+                    <div class="col-sm-12 col-lg-3 ad-vertical-space">
+                        <img src="images/ads/freelance.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container freelancer-send-offer ">
+                    <div class="row">
+                        <div class="col-lg-12 the-title">
+                            <h6 class="title">Freelancers que ofertaron</h6>
+                            <hr>
                         </div>
-                        <div class="share-social">
-                            <a href="" class="btn btn-twitter"> Twitter <i class="fab fa-twitter"></i> </a>
-                            <a href="" class="btn btn-facebook"> Facebook <i class="fab fa-facebook"></i> </a>
+                    </div>
+                    <div class="container the-freelancer card">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-4 avatar">
+                                <img src="images/avatars/philipe-cavalcante-733389-unsplash.jpg" alt="">
+                            </div>
+                            <div class="col-sm-12 col-lg-8 info">
+                                <div class="top">
+                                    <div class="personal-info">
+                                        <div class="name">
+                                            <p><strong>Alicia Teixeira</strong></p>
+                                        </div>
+                                        <div class="user-rank the-filters">
+                                            <i class="fas fa-star full"></i>
+                                            <i class="fas fa-star full"></i>
+                                            <i class="fas fa-star full"></i>
+                                            <i class="fas fa-star full"></i>
+                                            <i class="fas fa-star full"></i>
+                                        </div>
+                                    </div>
+                                    <div class="personal-info">
+                                        <div class="name">
+                                            <p><strong>Residencia</strong></p>
+                                        </div>
+                                        <div class="user-country">
+                                            <p><small>Espana</small></p>
+                                            <img src="images/1280px-Flag_of_Spain.svg.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="personal-info hour-rate">
+                                        <div class="name">
+                                            <p><strong>USD / hora</strong></p>
+                                        </div>
+                                        <div class="user-country">
+                                            <p><small>$50</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=""><hr></div>
+                                <div class="middle">
+                                    <div class="description">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reprehenderit voluptatem nemo qui. Amet ea voluptatibus minus quis reprehenderit adipisci nulla sed eaque, expedita, ab quidem commodi praesentium quaerat veritatis!
+                                        </p>
+                                    </div>
+                                    <div class="details">
+                                        <div class="tags">
+                                            <div class="the-perks">
+                                                    <span class="badge badge-light enabled" id="perk-11">Diseno web <span class="close-perk" data-id="perk-11"><i class="fas fa-times"></i></span></span>
+                                                    <span class="badge badge-light enabled" id="perk-12">Html <span class="close-perk" data-id="perk-12"><i class="fas fa-times"></i></span></span>
+                                                    <span class="badge badge-light enabled" id="perk-13">Css <span class="close-perk" data-id="perk-13"><i class="fas fa-times"></i></span></span>
+                                                    <span class="badge badge-light enabled" id="perk-14">React <span class="close-perk" data-id="perk-14"><i class="fas fa-times"></i></span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <button class="btn btn-primary">Contratar</button>
+                                    <button class="btn btn-light-empty">Ver portafolio</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="container the-freelancer card">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-4 avatar">
+                                    <img src="images/avatars/philipe-cavalcante-733389-unsplash.jpg" alt="">
+                                </div>
+                                <div class="col-sm-12 col-lg-8 info">
+                                    <div class="top">
+                                        <div class="personal-info">
+                                            <div class="name">
+                                                <p><strong>Alicia Teixeira</strong></p>
+                                            </div>
+                                            <div class="user-rank the-filters">
+                                                <i class="fas fa-star full"></i>
+                                                <i class="fas fa-star full"></i>
+                                                <i class="fas fa-star full"></i>
+                                                <i class="fas fa-star full"></i>
+                                                <i class="fas fa-star full"></i>
+                                            </div>
+                                        </div>
+                                        <div class="personal-info">
+                                            <div class="name">
+                                                <p><strong>Residencia</strong></p>
+                                            </div>
+                                            <div class="user-country">
+                                                <p><small>Espana</small></p>
+                                                <img src="images/1280px-Flag_of_Spain.svg.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="personal-info">
+                                            <div class="name">
+                                                <p><strong>USD / hora</strong></p>
+                                            </div>
+                                            <div class="user-country">
+                                                <p><small>$50</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=""><hr></div>
+                                    <div class="middle">
+                                        <div class="description">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reprehenderit voluptatem nemo qui. Amet ea voluptatibus minus quis reprehenderit adipisci nulla sed eaque, expedita, ab quidem commodi praesentium quaerat veritatis!
+                                            </p>
+                                        </div>
+                                        <div class="details">
+                                            <div class="tags">
+                                                <div class="the-perks">
+                                                        <span class="badge badge-light enabled" id="perk-11">Diseno web <span class="close-perk" data-id="perk-11"><i class="fas fa-times"></i></span></span>
+                                                        <span class="badge badge-light enabled" id="perk-12">Html <span class="close-perk" data-id="perk-12"><i class="fas fa-times"></i></span></span>
+                                                        <span class="badge badge-light enabled" id="perk-13">Css <span class="close-perk" data-id="perk-13"><i class="fas fa-times"></i></span></span>
+                                                        <span class="badge badge-light enabled" id="perk-14">React <span class="close-perk" data-id="perk-14"><i class="fas fa-times"></i></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <button class="btn btn-primary">Contratar</button>
+                                        <button class="btn btn-light-empty">Ver portafolio</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container the-freelancer card">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4 avatar">
+                                        <img src="images/avatars/philipe-cavalcante-733389-unsplash.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-12 col-lg-8 info">
+                                        <div class="top">
+                                            <div class="personal-info">
+                                                <div class="name">
+                                                    <p><strong>Alicia Teixeira</strong></p>
+                                                </div>
+                                                <div class="user-rank the-filters">
+                                                    <i class="fas fa-star full"></i>
+                                                    <i class="fas fa-star full"></i>
+                                                    <i class="fas fa-star full"></i>
+                                                    <i class="fas fa-star full"></i>
+                                                    <i class="fas fa-star full"></i>
+                                                </div>
+                                            </div>
+                                            <div class="personal-info">
+                                                <div class="name">
+                                                    <p><strong>Residencia</strong></p>
+                                                </div>
+                                                <div class="user-country">
+                                                    <p><small>Espana</small></p>
+                                                    <img src="images/1280px-Flag_of_Spain.svg.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="personal-info">
+                                                <div class="name">
+                                                    <p><strong>USD / hora</strong></p>
+                                                </div>
+                                                <div class="user-country">
+                                                    <p><small>$50</small></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=""><hr></div>
+                                        <div class="middle">
+                                            <div class="description">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reprehenderit voluptatem nemo qui. Amet ea voluptatibus minus quis reprehenderit adipisci nulla sed eaque, expedita, ab quidem commodi praesentium quaerat veritatis!
+                                                </p>
+                                            </div>
+                                            <div class="details">
+                                                <div class="tags">
+                                                    <div class="the-perks">
+                                                            <span class="badge badge-light enabled" id="perk-11">Diseno web <span class="close-perk" data-id="perk-11"><i class="fas fa-times"></i></span></span>
+                                                            <span class="badge badge-light enabled" id="perk-12">Html <span class="close-perk" data-id="perk-12"><i class="fas fa-times"></i></span></span>
+                                                            <span class="badge badge-light enabled" id="perk-13">Css <span class="close-perk" data-id="perk-13"><i class="fas fa-times"></i></span></span>
+                                                            <span class="badge badge-light enabled" id="perk-14">React <span class="close-perk" data-id="perk-14"><i class="fas fa-times"></i></span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <button class="btn btn-primary">Contratar</button>
+                                            <button class="btn btn-light-empty">Ver portafolio</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
             </div>
         </div>
-        <div class="how-it-works">
-            <div class="container">
-                <div class="row">
-                    <div class="the-title col-lg-12 text-center">
-                        <h3 class="title">Como funciona ?</h3>
-                    </div>
-                    <div class="the-step col-lg-4 d-flex justify-content-center align-items-center flex-column">
-                        <i class="fas fa-american-sign-language-interpreting"></i>
-                        <h4 class="subtitle">Categoria</h4>
-                    </div>
-                    <div class="the-step col-lg-4 d-flex justify-content-center align-items-center flex-column">
-                        <i class="fas fa-american-sign-language-interpreting"></i>
-                        <h4 class="subtitle">Categoria</h4>
-                    </div>
-                    <div class="the-step col-lg-4 d-flex justify-content-center align-items-center flex-column">
-                        <i class="fas fa-american-sign-language-interpreting"></i>
-                        <h4 class="subtitle">Categoria</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-message">
-            <div class="container">
-                <div class="row">
-                    <h2 class="title">Titulo</h2>
-                    <p class="subtitle">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores aut deleniti omnis dolor at eum tempore  dicta repudiandae, hic, nisi fugit optio neque molestiae, quo distinctio corporis. Nostrum, asperiores.
-                    </p>
-                    <div class="button">
-                        <a href="" class="btn btn-light-empty-white">Mirar ahora</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--End of navbar -->
     <script src="js/functions.js"></script>
 </body>
 </html>

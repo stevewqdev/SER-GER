@@ -58,3 +58,7 @@
   .main-app .navbar-collapse {
     background: #383d41bd;
     padding: 50px 0; } }
+
+@media (max-width: 1200px) {
+  .main-app__navbar .navbar-brand {
+    width: 100px !important; } }
