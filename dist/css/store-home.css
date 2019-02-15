@@ -1,0 +1,115 @@
+.home-store-wrapper {
+  background: url(../images/ads/siluette.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+
+.what-can-do {
+  position: relative;
+  top: -50px; }
+
+.what-can-do .step {
+  padding: 0;
+  margin: 15px 5px;
+  width: calc(100% / 3.2);
+  padding: 20px; }
+  @media (max-width: 768px) {
+    .what-can-do .step {
+      width: calc(100% / 2.12); } }
+  @media (max-width: 390px) {
+    .what-can-do .step {
+      width: 100%;
+      flex-direction: column; } }
+
+@media (max-width: 390px) {
+  .what-can-do .the-steps {
+    flex-direction: column; } }
+
+.what-can-do .icon {
+  margin: 15px 0; }
+
+.what-can-do .mod-title {
+  color: #7f7f7f;
+  text-align: center;
+  margin: 20px 5px; }
+
+.what-can-do .container.card.shadow {
+  padding: 40px; }
+
+.what-can-do .icon .fas {
+  font-size: 50px;
+  color: #00edb5; }
+
+.what-can-do .title {
+  font-size: 25px;
+  margin: 15px 0; }
+
+.what-can-do .description p {
+  line-height: 2em; }
+
+.store-plans {
+  margin: 100px 0; }
+
+.store-plans .check-items {
+  margin: 20px 0; }
+
+.store-plans .the-item {
+  display: flex;
+  align-items: center; }
+
+.store-plans .the-item p {
+  padding: 0;
+  margin: 0 0 0 10px; }
+
+.store-plans .white-third .title, .store-plans .white-third .precio {
+  color: #8683ad; }
+
+.store-plans .white-white .title, .store-plans .white-white .precio {
+  color: #ffffff; }
+
+.store-plans .white-white {
+  background: #00edb5; }
+
+.store-plans .white-white .fas {
+  color: white; }
+
+.store-plans .white-secondary .title, .store-plans .white-secondary .precio {
+  color: #fe8e78; }
+
+.store-plans .button {
+  margin: 40px 0; }
+
+.store-plans .plan {
+  padding: 50px;
+  margin: 15px 0px;
+  width: calc(100% / 3.2);
+  padding: 20px; }
+  @media (max-width: 768px) {
+    .store-plans .plan {
+      width: calc(100% / 2.12); } }
+  @media (max-width: 390px) {
+    .store-plans .plan {
+      width: 100%; } }
+
+.home-layout.store-layout .project-finder {
+  padding: 30px 15px 100px 0px; }
+
+.home-layout.store-layout .my-store-wrapper .first-column .project-finder {
+  padding: 0; }
+
+.store-layout .explore-market {
+  margin: 100px 0 30px 0; }
+
+.store-layout .first-column {
+  padding: 0; }
+
+.store-layout .my-store-wrapper .nav-link {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  background-color: transparent !important; }
+
+.store-layout .my-store-wrapper a {
+  color: #545454 !important; }
+
+.store-layout .my-store-wrapper .nav-link.active {
+  border-bottom: solid 5px #00edb5; }

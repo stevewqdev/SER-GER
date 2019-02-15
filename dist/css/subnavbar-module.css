@@ -30,7 +30,7 @@
       justify-content: space-around; } }
 
 .sub_right .navbar-nav {
-  justify-content: flex-end; }
+  justify-content: flex-start; }
   @media (max-width: 768px) {
     .sub_right .navbar-nav {
       display: flex !important;

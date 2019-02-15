@@ -1,0 +1,70 @@
+// Font and colors variables
+$primary: #00edb5
+$secondary: #fe8e78
+$white: #ffffff
+$light-dark: #545454
+$black: #303030
+$gray: #7f7f7f
+$light-gray: #cecece
+$footer-background: #2c2956
+$button-font: Roboto, san-seriff
+$break-small: 390px
+$break-medium: 768px
+$break-large: 1200px
+
+.my-store-wrapper
+    padding: 40px 0;
+    margin: 10px 0;
+.my-store-wrapper .nav-tabs
+    border-bottom: none!important
+.my-store-wrapper .nav-tabs .nav-item
+    margin: 0
+.my-store-wrapper .store-title
+    color: $light-dark
+.store-tabs-result
+    margin: 30px 0
+.my-store-wrapper .store-tabs-content
+    padding: 100px 50px
+    margin: 30px 0
+.my-store-wrapper .project-finder .type-profile-selector .freelancer-btn
+    left: -10px;
+    position: relative;
+    transition: all ease-in-out .3s;
+.my-store-wrapper  .project-finder  .btn-white.active
+    background: #00edb5 !important;
+    border-color: #00edb5 !important;
+    position: relative;
+    z-index: 999;
+    border-radius: 0 20px 20px 0;
+    transition: all ease-in-out .3s;
+// store product module
+.store-product-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+.store-product-wrapper .the-product
+    padding: 0
+    margin: 15px 5px;
+    width: calc(100% / 3.2);
+    @media (max-width: $break-medium)
+        width: calc(100% / 2.12);
+    @media (max-width: $break-small)
+        width: 100%
+.store-product-wrapper .product-content
+    padding: 20px
+.store-product-wrapper  .product-image img
+    width: 100%
+    height: 200px
+    object-fit: cover
+.store-product-wrapper .product-content .avatar-user
+    position: relative;
+    top: -45px;
+.store-product-wrapper .product-content .avatar-user img
+    width: 45px
+    height: 45px
+    object-fit: cover
+    border-radius: 100%
+.store-product-wrapper .product-content .button-buy
+    margin: 20px 0
+.store-product-wrapper .product-content .button-buy .btn
+    min-width: auto!important

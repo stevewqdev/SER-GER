@@ -14,6 +14,7 @@ $button-font: Roboto, san-seriff
 $break-small: 390px
 $break-medium: 768px
 $break-large: 1200px
+$text-third: #8683ad
 
 
 body
@@ -32,10 +33,11 @@ body
 
 h1,h2,h3,h4,h5,h6
     font-family: 'Ford Antenna Medium', 'Roboto'!important
-p, li, span
+p, li, span, label
     font-family: 'Quicksand'!important
     color: $light-dark
-
+label
+    font-weight: bold
 .btn
     transition: all  1s
     text-transform: uppercase
@@ -53,6 +55,24 @@ p, li, span
     background-color: $primary!important
     border-color: $primary!important
     color: $light-dark!important
+.btn-third
+    background-color: $text-third!important
+    border-color: $text-third!important
+    color: $light-dark!important
+    font-weight: bold!important
+.btn-third:hover
+    background-color: $text-third!important
+    border-color: $text-third!important
+    color: $light-dark!important
+.btn-third-light
+    background-color: $text-third!important
+    border-color: $text-third!important
+    color: $white!important
+    font-weight: bold!important
+.btn-third-light:hover
+    background-color: $text-third!important
+    border-color: $text-third!important
+    color: $white!important
 .btn-primary-light
     background-color: $primary!important
     border-color: $primary!important
@@ -164,7 +184,9 @@ p, li, span
 .nav-pills .nav-item
     padding: 0
     margin: 0
-
+.border-secondary
+    border-left: solid 10px $secondary!important
+    border-color: $secondary!important
 // NAVBAR CODE IMPORT
 @import 'navbar-module'
 @import 'subnavbar-module'
@@ -195,5 +217,11 @@ p, li, span
 @import 'post-offer'
 // Post Search Freelancer
 @import 'search-freelancer-module'
+// My Store Module
+@import 'store-home'
+// My Store Module
+@import 'store-module'
+// Create project module
+@import 'create-project-module'
 // Footer
 @import 'footer-module'

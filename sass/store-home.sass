@@ -1,0 +1,99 @@
+// Font and colors variables
+$primary: #00edb5
+$secondary: #fe8e78
+$white: #ffffff
+$light-dark: #545454
+$black: #303030
+$gray: #7f7f7f
+$light-gray: #cecece
+$footer-background: #2c2956
+$button-font: Roboto, san-seriff
+$break-small: 390px
+$break-medium: 768px
+$break-large: 1200px
+$text-third: #8683ad
+
+.home-store-wrapper
+    background: url(../images/ads/siluette.jpg)
+    background-size: cover
+    background-attachment: fixed
+.what-can-do
+    position: relative;
+    top: -50px;
+.what-can-do .step
+    padding: 0
+    margin: 15px 5px;
+    width: calc(100% / 3.2);
+    padding: 20px
+    @media (max-width: $break-medium)
+        width: calc(100% / 2.12);
+    @media (max-width: $break-small)
+        width: 100%
+        flex-direction: column
+.what-can-do .the-steps
+    @media (max-width: $break-small)
+        flex-direction: column
+.what-can-do .icon
+    margin: 15px 0
+.what-can-do .mod-title
+    color: $gray
+    text-align: center
+    margin: 20px 5px
+.what-can-do .container.card.shadow
+    padding: 40px;
+.what-can-do .icon .fas
+    font-size: 50px;
+    color: $primary
+.what-can-do .title
+    font-size: 25px
+    margin: 15px 0
+.what-can-do .description p
+    line-height: 2em
+.store-plans
+    margin: 100px 0
+.store-plans .check-items
+    margin: 20px 0
+.store-plans .the-item
+    display: flex;
+    align-items: center
+.store-plans .the-item p
+    padding: 0
+    margin: 0 0 0 10px
+.store-plans .white-third .title, .store-plans .white-third .precio
+    color: $text-third
+.store-plans .white-white .title, .store-plans .white-white .precio
+    color: $white
+.store-plans .white-white
+    background: $primary
+.store-plans .white-white .fas
+    color: white
+.store-plans .white-secondary .title, .store-plans .white-secondary .precio
+    color: $secondary
+.store-plans .button
+    margin: 40px 0
+.store-plans .plan
+    padding: 50px
+    margin: 15px 0px;
+    width: calc(100% / 3.2);
+    padding: 20px
+    @media (max-width: $break-medium)
+        width: calc(100% / 2.12);
+    @media (max-width: $break-small)
+        width: 100%
+.home-layout.store-layout .project-finder
+    padding: 30px 15px 100px 0px;
+.home-layout.store-layout .my-store-wrapper .first-column .project-finder
+    padding: 0
+.store-layout .explore-market
+    margin: 100px 0 30px 0;
+.store-layout .first-column
+    padding: 0
+.store-layout .my-store-wrapper .nav-link
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    background-color: transparent!important
+.store-layout .my-store-wrapper a
+    color: $light-dark!important
+.store-layout .my-store-wrapper .nav-link.active
+    border-bottom: solid 5px $primary

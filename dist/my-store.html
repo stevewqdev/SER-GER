@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Servilance - Search Projects</title>
+    <title>Servilance - My Store</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,7 +16,7 @@
 
 </head>
 <body>
-    <div class="app-wrapper search-project-layout">
+    <div class="app-wrapper">
         <!-- Navbar -->
         <div class="main-app__navbar">
                 <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
@@ -261,9 +261,9 @@
                     </nav>
         </div>
         <!--End of navbar -->
-        <div class="container-fluid search-project-wrapper">
+        <div class="container-fluid ">
             <!-- this is the inner navbar -->
-            <div class="sub_navbar sub_left light">
+            <div class="sub_navbar sub_right ">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg navbar-light ">
                         <div id="navbarNav" >
@@ -294,298 +294,244 @@
                 </div>
             </div>
             <!--End of subnavbar -->
-            <div class="project-finder">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h2 class="title">Busca los mejores freelancers para tu negocio</h2>
-                                <div class="type-profile-selector">
-                                    <button class="btn btn-white active">EMPLEADOR</button>
-                                    <button class="btn btn-white freelancer-btn">FREELANCER</button>
-                                </div>
-                                <div class="project-filter">
-                                    <div class="open-projects first-item item">
-                                        <p>Abiertos</p>
-                                    </div>
-                                    <div class="on-going-projects active item">
-                                        <p>Trabajos en curso</p>
-                                    </div>
-                                    <div class="finished-projects item">
-                                        <p>Proyectos Anteriores</p>
-
-                                    </div>
-                                </div>
-                                <div class="project-filter-form">
-                                    <form action="">
-                                        <div class="form-row align-items-center">
-                                            <div class="col-sm-5 my-1">
-                                              <label class="sr-only" for="inlineFormInputName"></label>
-                                              <input type="text" class="form-control" id="inlineFormInputName" placeholder="Nombre del proyecto">
-                                            </div>
-                                            <div class="col-sm-3 my-1">
-                                              <label class="sr-only" for="inlineFormInputGroupUsername">ID del proyecto</label>
-                                              <div class="input-group">
-                                                <input type="text" class="form-control project-number" id="inlineFormInputGroupUsername" placeholder="Numero del proyecto">
-                                              </div>
-                                            </div>
-                                            <div class="col-sm-2 my-1">
-                                                <label class="sr-only" for="inlineFormInputGroupUsername">Categoria</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control categorie" id="inlineFormInputGroupUsername" placeholder="Categoria">
-                                                </div>
-                                            </div>
-                                            <div class="col-auto my-1 form-button-wrapper">
-                                              <button type="submit" class="btn btn-primary filter-form-button"><i class="fas fa-search"></i></button>
-                                            </div>
-                                          </div>
-                                    </form>
-                                    <div class="the-perks">
-                                        <span class="badge badge-light enabled" id="perk-1">Diseno web <span class="close-perk" data-id="perk-1"><i class="fas fa-times"></i></span></span>
-                                        <span class="badge badge-light enabled" id="perk-2">Html <span class="close-perk" data-id="perk-2"><i class="fas fa-times"></i></span></span>
-                                        <span class="badge badge-light enabled" id="perk-3">Css <span class="close-perk" data-id="perk-3"><i class="fas fa-times"></i></span></span>
-                                        <span class="badge badge-light enabled" id="perk-4">React <span class="close-perk" data-id="perk-4"><i class="fas fa-times"></i></span></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
         </div>
-        <div class="ad-space">
+        <div class="my-store-wrapper">
             <div class="container">
                 <div class="row">
-                    <img src="images/ads/watches.jpg" alt="">
+                    <div class="col-lg-6 d-flex justify-content-lg-start justify-content-sm-center">
+                        <div class="store-title">
+                            <h4>Mi Store</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-lg-end justify-content-sm-center">
+                        <div class="menu-controller project-finder">
+                                <ul class="nav nav-tabs " id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active btn btn-white active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mis productos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn btn-white freelancer-btn" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Productos comprados</a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container search-project-controllers">
-            <div class="row">
-                <div class="col-lg-4 search-project-filter">
-                    <div class="top-title card shadow">
-                        <h5>Buscador de proyectos</h5>
-                    </div>
-                    <div class="the-filters card shadow">
-                        <form action="">
-                            <div class="form-group">
-                                <h5 class="title">Categorias</h5>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Pagar primero 5 dias del mes</label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Pagar todos los 15 del mes</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <h5 class="title">Selector</h5>
-                                <select class="custom-select custom-multiple" multiple>
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <h5 class="title">Selector</h5>
-                                <select class="custom-select">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <h5 class="title">Categorias</h5>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">
-                                        <div class="user-rank">
-                                                <i class="fas fa-star full"></i>
-                                                <i class="fas fa-star "></i>
-                                                <i class="fas fa-star "></i>
-                                                <i class="fas fa-star "></i>
-                                                <i class="fas fa-star"></i>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 card shadow store-tabs-content">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="empty-products d-flex flex-column justify-content-center align-items-center">
+                                        <div class="title">
+                                            <h3>No tienes ningun producto creado
                                         </div>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">
-                                        <div class="user-rank">
-                                                <i class="fas fa-star full"></i>
-                                                <i class="fas fa-star full"></i>
-                                                <i class="fas fa-star "></i>
-                                                <i class="fas fa-star "></i>
-                                                <i class="fas fa-star"></i>
+                                        <div class="content">
+                                            <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam natus dolorum accusantium repellat assumenda quis laudantium vitae fuga! Cupiditate voluptate magnam in laborum dolorum iste recusandae fugiat voluptatem. Autem, eveniet?</strong></p>
                                         </div>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">
-                                        <div class="user-rank">
-                                                <i class="fas fa-star full"></i>
-                                                <i class="fas fa-star full"></i>
-                                                <i class="fas fa-star full"></i>
-                                                <i class="fas fa-star "></i>
-                                                <i class="fas fa-star"></i>
+                                        <div class="the-button">
+                                            <a href="" class="btn btn-primary">Crear producto</a>
+
                                         </div>
-                                    </label>
+                                        </h3>
+                                        <hr>
                                 </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">
-                                        <div class="user-rank">
-                                                <i class="fas fa-star full"></i>
-                                                <i class="fas fa-star full"></i>
-                                                <i class="fas fa-star full"></i>
-                                                <i class="fas fa-star full"></i>
-                                                <i class="fas fa-star"></i>
+                                <div class="store-product-wrapper">
+                                    <div class="card shadow the-product">
+                                        <div class="product-image">
+                                            <img src="images/ads/siluette.jpg" alt="">
                                         </div>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">
-                                        <div class="user-rank">
+                                        <div class="product-content">
+                                            <div class="avatar-user" data-toggle="tooltip" data-placement="top" title="Alicia Teixeira">
+                                                <img src="images/avatars/philipe-cavalcante-733389-unsplash.jpg" alt="">
+                                            </div>
+                                            <div class="title">
+                                                <p><strong>This is the product title</strong></p>
+                                            </div>
+                                            <div class="info">
+                                                <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quidem amet accusantium et cumque illum sint, corporis ut quaerat sed sit voluptatum sequi esse commodi nobis, saepe rem explicabo architecto.</small></p>
+                                            </div>
+                                            <div class="price">
+                                                <p class="primary-text"><strong>$4000</strong></p>
+                                            </div>
+                                            <div class="user-rank the-filters product-rank">
                                                 <i class="fas fa-star full"></i>
                                                 <i class="fas fa-star full"></i>
                                                 <i class="fas fa-star full"></i>
                                                 <i class="fas fa-star full"></i>
                                                 <i class="fas fa-star full"></i>
+                                            </div>
+                                            <div class="button-buy d-flex justify-content-center align-items-center">
+                                                <a href="" class="btn btn-primary">Comprar</a>
+                                            </div>
                                         </div>
-                                    </label>
+                                    </div>
+                                    <div class="card shadow the-product">
+                                            <div class="product-image">
+                                                <img src="images/ads/siluette.jpg" alt="">
+                                            </div>
+                                            <div class="product-content">
+                                                <div class="avatar-user" data-toggle="tooltip" data-placement="top" title="Alicia Teixeira">
+                                                    <img src="images/avatars/philipe-cavalcante-733389-unsplash.jpg" alt="">
+                                                </div>
+                                                <div class="title">
+                                                    <p><strong>This is the product title</strong></p>
+                                                </div>
+                                                <div class="info">
+                                                    <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quidem amet accusantium et cumque illum sint, corporis ut quaerat sed sit voluptatum sequi esse commodi nobis, saepe rem explicabo architecto.</small></p>
+                                                </div>
+                                                <div class="price">
+                                                    <p class="primary-text"><strong>$4000</strong></p>
+                                                </div>
+                                                <div class="user-rank the-filters product-rank">
+                                                    <i class="fas fa-star full"></i>
+                                                    <i class="fas fa-star full"></i>
+                                                    <i class="fas fa-star full"></i>
+                                                    <i class="fas fa-star full"></i>
+                                                    <i class="fas fa-star full"></i>
+                                                </div>
+                                                <div class="button-buy d-flex justify-content-center align-items-center">
+                                                    <a href="" class="btn btn-primary">Comprar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card shadow the-product">
+                                                <div class="product-image">
+                                                    <img src="images/ads/siluette.jpg" alt="">
+                                                </div>
+                                                <div class="product-content">
+                                                    <div class="avatar-user" data-toggle="tooltip" data-placement="top" title="Alicia Teixeira">
+                                                        <img src="images/avatars/philipe-cavalcante-733389-unsplash.jpg" alt="">
+                                                    </div>
+                                                    <div class="title">
+                                                        <p><strong>This is the product title</strong></p>
+                                                    </div>
+                                                    <div class="info">
+                                                        <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quidem amet accusantium et cumque illum sint, corporis ut quaerat sed sit voluptatum sequi esse commodi nobis, saepe rem explicabo architecto.</small></p>
+                                                    </div>
+                                                    <div class="price">
+                                                        <p class="primary-text"><strong>$4000</strong></p>
+                                                    </div>
+                                                    <div class="user-rank the-filters product-rank">
+                                                        <i class="fas fa-star full"></i>
+                                                        <i class="fas fa-star full"></i>
+                                                        <i class="fas fa-star full"></i>
+                                                        <i class="fas fa-star full"></i>
+                                                        <i class="fas fa-star full"></i>
+                                                    </div>
+                                                    <div class="button-buy d-flex justify-content-center align-items-center">
+                                                        <a href="" class="btn btn-primary">Comprar</a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <h5 class="title">Selector</h5>
-                                <div class="button-selector">
-                                    <p  class="btn btn-light-empty active btn-selection" id="option-1" name="option-1">Opcion A</p>
-                                    <p  class="btn btn-light-empty  btn-selection" id="option-2" name="option-2">Opcion A</p>
-                                    <p  class="btn btn-light-empty  btn-selection" id="option-3" name="option-3">Opcion A</p>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-8 search-project-results">
-                    <div class="the-perks">
-                            <span class="badge badge-light enabled" id="perk-6">Diseno web <span class="close-perk" data-id="perk-6"><i class="fas fa-times"></i></span></span>
-                            <span class="badge badge-light enabled" id="perk-7">Html <span class="close-perk" data-id="perk-7"><i class="fas fa-times"></i></span></span>
-                            <span class="badge badge-light enabled" id="perk-8">Css <span class="close-perk" data-id="perk-8"><i class="fas fa-times"></i></span></span>
-                            <span class="badge badge-light enabled" id="perk-9">React <span class="close-perk" data-id="perk-9"><i class="fas fa-times"></i></span></span>
-                    </div>
-                    <div class="top-message card shadow">
-                        <p>Encuentra proyectos a tu medida aqui</p>
-                    </div>
-                    <div class="results">
-                        <div class="the-result card shadow highlighted">
-                            <div class="info-top">
-                                <h4 class="title"><i class="fas fa-star full"></i> Titulo del proyecto</h4>
-                                <a href="" class="btn btn-primary-light">Enviar propuesta</a>
-                            </div>
-                            <div class="info-part-one">
-                                <p><strong>Publicado: </strong>hace 12 horas</p>
-                                <p><strong>Propuestas Recibidas: </strong>10</p>
-                            </div>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium id similique corrupti ipsa molestiae commodi voluptatem asperiores? Tempore culpa, aspernatur similique quasi adipisci facere repellat esse totam, earum, quibusdam dolore?
-                            </p>
-                            <div class="tags">
-                                <div class="the-perks">
-                                        <span class="badge badge-light enabled" id="perk-11">Diseno web <span class="close-perk" data-id="perk-11"><i class="fas fa-times"></i></span></span>
-                                        <span class="badge badge-light enabled" id="perk-12">Html <span class="close-perk" data-id="perk-12"><i class="fas fa-times"></i></span></span>
-                                        <span class="badge badge-light enabled" id="perk-13">Css <span class="close-perk" data-id="perk-13"><i class="fas fa-times"></i></span></span>
-                                        <span class="badge badge-light enabled" id="perk-14">React <span class="close-perk" data-id="perk-14"><i class="fas fa-times"></i></span></span>
-                                </div>
-                                <hr>
-                            </div>
-                            <div class="project-creator-info">
-                                <p class="project-user"><small>Alicia Teixeira</small></p>
-                                <p><strong>Proyectos Publicados: </strong>18</p>
-                                <p><strong>Proyectos Pagados: </strong>10/18</p>
-                                <p><strong>Ultimo Login: </strong>hace 2 horas</p>
-                                <p><strong>Ubicacion: </strong>Mexico</p>
-                            </div>
-                            <div class="project-creator-bottom-info">
-                                <div class="user-info">
-                                    <div class="user-avatar">
-                                        <img src="images/ads/street.jpg" alt="">
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="empty-products d-flex flex-column justify-content-center align-items-center">
+                                            <div class="title">
+                                                <h3>No tienes ningun producto creado
+                                            </div>
+                                            <div class="content">
+                                                <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam natus dolorum accusantium repellat assumenda quis laudantium vitae fuga! Cupiditate voluptate magnam in laborum dolorum iste recusandae fugiat voluptatem. Autem, eveniet?</strong></p>
+                                            </div>
+                                            <div class="the-button">
+                                                <a href="" class="btn btn-primary">Crear producto</a>
+
+                                            </div>
+                                            </h3>
+                                            <hr>
                                     </div>
-                                    <div class="user-name">
-                                        <p>Alicia Teixeira</p>
+                                    <div class="store-product-wrapper">
+                                        <div class="card shadow the-product">
+                                            <div class="product-image">
+                                                <img src="images/ads/shapes.jpg" alt="">
+                                            </div>
+                                            <div class="product-content">
+                                                <div class="avatar-user" data-toggle="tooltip" data-placement="top" title="Alicia Teixeira">
+                                                    <img src="images/avatars/philipe-cavalcante-733389-unsplash.jpg" alt="">
+                                                </div>
+                                                <div class="title">
+                                                    <p><strong>This is the product title</strong></p>
+                                                </div>
+                                                <div class="info">
+                                                    <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quidem amet accusantium et cumque illum sint, corporis ut quaerat sed sit voluptatum sequi esse commodi nobis, saepe rem explicabo architecto.</small></p>
+                                                </div>
+                                                <div class="price">
+                                                    <p class="primary-text"><strong>$4000</strong></p>
+                                                </div>
+                                                <div class="user-rank the-filters product-rank">
+                                                    <i class="fas fa-star full"></i>
+                                                    <i class="fas fa-star full"></i>
+                                                    <i class="fas fa-star full"></i>
+                                                    <i class="fas fa-star full"></i>
+                                                    <i class="fas fa-star full"></i>
+                                                </div>
+                                                <div class="button-buy d-flex justify-content-center align-items-center">
+                                                    <a href="" class="btn btn-primary">Comprar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card shadow the-product">
+                                                <div class="product-image">
+                                                    <img src="images/ads/shapes.jpg" alt="">
+                                                </div>
+                                                <div class="product-content">
+                                                    <div class="avatar-user" data-toggle="tooltip" data-placement="top" title="Alicia Teixeira">
+                                                        <img src="images/avatars/philipe-cavalcante-733389-unsplash.jpg" alt="">
+                                                    </div>
+                                                    <div class="title">
+                                                        <p><strong>This is the product title</strong></p>
+                                                    </div>
+                                                    <div class="info">
+                                                        <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quidem amet accusantium et cumque illum sint, corporis ut quaerat sed sit voluptatum sequi esse commodi nobis, saepe rem explicabo architecto.</small></p>
+                                                    </div>
+                                                    <div class="price">
+                                                        <p class="primary-text"><strong>$4000</strong></p>
+                                                    </div>
+                                                    <div class="user-rank the-filters product-rank">
+                                                        <i class="fas fa-star full"></i>
+                                                        <i class="fas fa-star full"></i>
+                                                        <i class="fas fa-star full"></i>
+                                                        <i class="fas fa-star full"></i>
+                                                        <i class="fas fa-star full"></i>
+                                                    </div>
+                                                    <div class="button-buy d-flex justify-content-center align-items-center">
+                                                        <a href="" class="btn btn-primary">Comprar</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card shadow the-product">
+                                                    <div class="product-image">
+                                                        <img src="images/ads/shapes.jpg" alt="">
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <div class="avatar-user" data-toggle="tooltip" data-placement="top" title="Alicia Teixeira">
+                                                            <img src="images/avatars/philipe-cavalcante-733389-unsplash.jpg" alt="">
+                                                        </div>
+                                                        <div class="title">
+                                                            <p><strong>This is the product title</strong></p>
+                                                        </div>
+                                                        <div class="info">
+                                                            <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quidem amet accusantium et cumque illum sint, corporis ut quaerat sed sit voluptatum sequi esse commodi nobis, saepe rem explicabo architecto.</small></p>
+                                                        </div>
+                                                        <div class="price">
+                                                            <p class="primary-text"><strong>$4000</strong></p>
+                                                        </div>
+                                                        <div class="user-rank the-filters product-rank">
+                                                            <i class="fas fa-star full"></i>
+                                                            <i class="fas fa-star full"></i>
+                                                            <i class="fas fa-star full"></i>
+                                                            <i class="fas fa-star full"></i>
+                                                            <i class="fas fa-star full"></i>
+                                                        </div>
+                                                        <div class="button-buy d-flex justify-content-center align-items-center">
+                                                            <a href="" class="btn btn-primary">Comprar</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                     </div>
-                                    <div class="user-rank">
-                                        <!--stars-->
-                                    </div>
-                                </div>
-                                <div class="user-country">
-                                    <div class="country-image">
-                                        <img src="images/1200px-Flag_of_Mexico.svg.png" alt="">
-                                    </div>
-                                    <div class="country-name">
-                                        <p>Mexico</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                        <div class="the-result card shadow ">
-                            <div class="info-top">
-                                <h4 class="title"><i class="fas fa-star full"></i> Titulo del proyecto</h4>
-                                <a href="" class="btn btn-primary-light">Enviar propuesta</a>
-                            </div>
-                            <div class="info-part-one">
-                                <p><strong>Publicado: </strong>hace 12 horas</p>
-                                <p><strong>Propuestas Recibidas: </strong>10</p>
-                            </div>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium id similique corrupti ipsa molestiae commodi voluptatem asperiores? Tempore culpa, aspernatur similique quasi adipisci facere repellat esse totam, earum, quibusdam dolore?
-                            </p>
-                            <div class="tags">
-                                <div class="the-perks">
-                                        <span class="badge badge-light enabled" id="perk-11">Diseno web <span class="close-perk" data-id="perk-11"><i class="fas fa-times"></i></span></span>
-                                        <span class="badge badge-light enabled" id="perk-12">Html <span class="close-perk" data-id="perk-12"><i class="fas fa-times"></i></span></span>
-                                        <span class="badge badge-light enabled" id="perk-13">Css <span class="close-perk" data-id="perk-13"><i class="fas fa-times"></i></span></span>
-                                        <span class="badge badge-light enabled" id="perk-14">React <span class="close-perk" data-id="perk-14"><i class="fas fa-times"></i></span></span>
-                                </div>
-                                <hr>
-                            </div>
-                            <div class="project-creator-info">
-                                <p class="project-user"><small>Alicia Teixeira</small></p>
-                                <p><strong>Proyectos Publicados: </strong>18</p>
-                                <p><strong>Proyectos Pagados: </strong>10/18</p>
-                                <p><strong>Ultimo Login: </strong>hace 2 horas</p>
-                                <p><strong>Ubicacion: </strong>Mexico</p>
-                            </div>
-                            <div class="project-creator-bottom-info">
-                                <div class="user-info">
-                                    <div class="user-avatar">
-                                        <img src="images/ads/street.jpg" alt="">
-                                    </div>
-                                    <div class="user-name">
-                                        <p>Alicia Teixeira</p>
-                                    </div>
-                                    <div class="user-rank">
-                                        <!--stars-->
-                                    </div>
-                                </div>
-                                <div class="user-country">
-                                    <div class="country-image">
-                                        <img src="images/1200px-Flag_of_Mexico.svg.png" alt="">
-                                    </div>
-                                    <div class="country-name">
-                                        <p>Mexico</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pagination">
-                        <a href="" class="btn btn-navigation">1</a>
-                        <a href="" class="btn btn-navigation">2</a>
-                        <a href="" class="btn btn-navigation">2</a>
-                        <a href="" class="btn btn-navigation">Ultima</a>
                     </div>
                 </div>
             </div>

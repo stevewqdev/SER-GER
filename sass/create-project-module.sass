@@ -1,0 +1,78 @@
+$primary: #00edb5
+$secondary: #fe8e78
+$white: #ffffff
+$light-dark: #545454
+$black: #303030
+$gray: #7f7f7f
+$light-gray: #cecece
+$footer-background: #2c2956
+$button-font: Roboto, san-seriff
+$break-small: 390px
+$break-medium: 768px
+$break-large: 1200px
+$text-third: #8683ad
+
+.top-project-banner
+    padding: 20px 50px;
+    background-color: $primary!important
+    border-color: $primary!important
+    color: $light-dark
+    margin-top: 60px
+.create-project-wrapper form
+    width: 100%;
+    padding: 50px 45px;
+    @media (max-width: $break-small)
+        padding: 10px;
+.create-project-wrapper form .form-group
+    margin: 50px 0
+.create-project-wrapper textarea
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border-color: #cacaca;
+.create-project-wrapper .btn-selection.active
+    background-color: $primary!important
+    border-color: $primary!important
+    color: $white
+.form-group.two-buttons p
+    width: 48%
+.form-group.two-buttons .left
+    background: white!important
+    border-color: white!important
+    position: relative
+    left: -15px
+    border-radius:  20px 0 0 20px
+.form-group.two-buttons .left.active
+    background: $primary!important
+    border-color: $primary!important
+    position: relative
+    left: -15px
+    border-radius:  20px 0 0 20px
+    z-index: 5
+.form-group.two-buttons .right
+    position: relative;
+    right: -15px;
+    border-radius:   0 20px 20px 0
+    z-index: 4
+.explore-market .title
+    text-align: center
+.explore-market .categorie
+    transition: all ease-in-out 0.4s
+    padding: 30px;
+    @media (max-width: $break-medium)
+        padding: 15px;
+.explore-market .categorie:hover
+    background: #6bfb9140;
+    border-radius: 100%;
+    padding: 30px;
+    @media (max-width: $break-medium)
+        padding: 15px;
+        background: transparent
+.create-project-wrapper .button-selector
+    @media (max-width: $break-small)
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+.create-project-wrapper .button-selector p
+    @media (max-width: $break-small)
+        width: 100%

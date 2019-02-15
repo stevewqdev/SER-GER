@@ -1,0 +1,80 @@
+.top-project-banner {
+  padding: 20px 50px;
+  background-color: #00edb5 !important;
+  border-color: #00edb5 !important;
+  color: #545454;
+  margin-top: 60px; }
+
+.create-project-wrapper form {
+  width: 100%;
+  padding: 50px 45px; }
+  @media (max-width: 390px) {
+    .create-project-wrapper form {
+      padding: 10px; } }
+
+.create-project-wrapper form .form-group {
+  margin: 50px 0; }
+
+.create-project-wrapper textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border-color: #cacaca; }
+
+.create-project-wrapper .btn-selection.active {
+  background-color: #00edb5 !important;
+  border-color: #00edb5 !important;
+  color: #ffffff; }
+
+.form-group.two-buttons p {
+  width: 48%; }
+
+.form-group.two-buttons .left {
+  background: white !important;
+  border-color: white !important;
+  position: relative;
+  left: -15px;
+  border-radius: 20px 0 0 20px; }
+
+.form-group.two-buttons .left.active {
+  background: #00edb5 !important;
+  border-color: #00edb5 !important;
+  position: relative;
+  left: -15px;
+  border-radius: 20px 0 0 20px;
+  z-index: 5; }
+
+.form-group.two-buttons .right {
+  position: relative;
+  right: -15px;
+  border-radius: 0 20px 20px 0;
+  z-index: 4; }
+
+.explore-market .title {
+  text-align: center; }
+
+.explore-market .categorie {
+  transition: all ease-in-out 0.4s;
+  padding: 30px; }
+  @media (max-width: 768px) {
+    .explore-market .categorie {
+      padding: 15px; } }
+
+.explore-market .categorie:hover {
+  background: #6bfb9140;
+  border-radius: 100%;
+  padding: 30px; }
+  @media (max-width: 768px) {
+    .explore-market .categorie:hover {
+      padding: 15px;
+      background: transparent; } }
+
+@media (max-width: 390px) {
+  .create-project-wrapper .button-selector {
+    padding: 15px;
+    display: flex;
+    flex-direction: column; } }
+
+@media (max-width: 390px) {
+  .create-project-wrapper .button-selector p {
+    width: 100%; } }
